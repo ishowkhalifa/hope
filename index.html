@@ -3,17 +3,6 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>BISHOP COMP</title>
-    
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
     <title>Khali League | School Gaming League</title>
     
 
@@ -35,15 +24,15 @@
 @media(max-width:1100px){.games-grid{grid-template-columns:repeat(3,1fr)}.about-grid{grid-template-columns:repeat(2,1fr)}.admin-stats{grid-template-columns:repeat(3,1fr)}}@media(max-width:800px){.nav-links{display:none}.hero{min-height:650px;padding:80px 6%}.form-grid,.dashboard-grid,.admin-grid,.live-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.reviews-grid{grid-template-columns:1fr}.games-grid{grid-template-columns:repeat(2,1fr)}.checkbox-grid{grid-template-columns:repeat(2,1fr)}.admin-stats{grid-template-columns:repeat(2,1fr)}.filter-grid{grid-template-columns:1fr 1fr}.dashboard-top,.admin-header{align-items:flex-start;flex-direction:column}.video-stack{grid-template-columns:1fr}}@media(max-width:520px){section{padding:65px 5%}.hero h1{font-size:48px;letter-spacing:-3px}.games-grid,.about-grid{grid-template-columns:1fr}.stats,.admin-stats{grid-template-columns:1fr 1fr}.profile-info{grid-template-columns:1fr}.filter-grid{grid-template-columns:1fr}.navbar{padding:13px 4%}.nav-actions .btn{padding:9px 11px}}
 
 /* ================= STUDENT PORTAL UPGRADE ================= */
-.portal-shell{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:100vh;background:radial-gradient(circle at 50% 0%,rgba(157,78,221,.08),transparent 35%)}
-.portal-sidebar{position:sticky;top:0;height:100vh;padding:22px 14px;border-right:1px solid rgba(0,234,255,.16);background:linear-gradient(180deg,rgba(7,5,18,.98),rgba(3,3,12,.98));display:flex;flex-direction:column;gap:16px;z-index:20}
-.portal-brand{padding:4px 10px 18px;border-bottom:1px solid rgba(0,234,255,.12);font-weight:900;letter-spacing:1.5px;color:var(--cyan);font-size:19px}.portal-brand span{color:var(--pink)}
-.portal-user-mini{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid rgba(157,78,221,.25);border-radius:12px;background:rgba(157,78,221,.06)}
+.portal-shell{display:block;min-height:100vh;background:radial-gradient(circle at 50% 0%,rgba(157,78,221,.08),transparent 35%)}
+.portal-sidebar{position:sticky;top:0;width:100%;height:auto;padding:12px 4.5%;border-right:0;border-bottom:1px solid rgba(0,234,255,.16);background:rgba(3,3,12,.97);backdrop-filter:blur(14px);display:flex;flex-direction:row;align-items:center;gap:14px;z-index:100}
+.portal-brand{padding:4px 10px;font-weight:900;letter-spacing:1.5px;color:var(--cyan);font-size:19px;white-space:nowrap}.portal-brand span{color:var(--pink)}
+.portal-user-mini{display:flex;align-items:center;gap:10px;padding:7px 10px;border:1px solid rgba(157,78,221,.25);border-radius:12px;background:rgba(157,78,221,.06);white-space:nowrap}
 .portal-user-mini .mini-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;background:linear-gradient(135deg,var(--purple),var(--cyan));color:#fff}
 .portal-user-mini strong{display:block;font-size:12px}.portal-user-mini small{color:var(--muted);font-size:10px}
-.portal-menu{display:grid;gap:5px}.portal-menu button{border:1px solid transparent;background:transparent;color:var(--muted);padding:11px 12px;border-radius:9px;text-align:left;font-weight:700;font-size:12px}.portal-menu button:hover,.portal-menu button.active{color:#fff;border-color:rgba(0,234,255,.45);background:linear-gradient(90deg,rgba(0,234,255,.13),rgba(157,78,221,.08));box-shadow:inset 3px 0 0 var(--cyan)}
-.portal-live-mini{margin-top:auto;padding:13px;border:1px solid rgba(0,255,157,.35);border-radius:12px;background:rgba(0,255,157,.04)}.portal-live-mini strong{font-size:12px}.portal-live-mini p{font-size:10px;color:var(--muted);margin:5px 0 10px}.portal-live-mini .btn{width:100%;padding:8px}
-.portal-main{min-width:0;padding:24px 4.5% 40px}
+.portal-menu{display:flex;gap:5px;align-items:center;overflow-x:auto;flex:1;scrollbar-width:thin}.portal-menu button{border:1px solid transparent;background:transparent;color:var(--muted);padding:9px 11px;border-radius:9px;text-align:center;font-weight:700;font-size:12px;white-space:nowrap}.portal-menu button:hover,.portal-menu button.active{color:#fff;border-color:rgba(0,234,255,.45);background:linear-gradient(90deg,rgba(0,234,255,.13),rgba(157,78,221,.08));box-shadow:inset 3px 0 0 var(--cyan)}
+.portal-live-mini{padding:7px 10px;border:1px solid rgba(0,255,157,.35);border-radius:12px;background:rgba(0,255,157,.04);white-space:nowrap}.portal-live-mini strong{font-size:12px}.portal-live-mini p{display:none;font-size:10px;color:var(--muted);margin:5px 0 10px}.portal-live-mini .btn{padding:7px 10px}
+.portal-main{min-width:0;padding:20px 4.5% 40px}.portal-main section,.portal-main [id]{scroll-margin-top:105px}
 .portal-topbar{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:10px 0 22px;border-bottom:1px solid rgba(0,234,255,.12);margin-bottom:22px}
 .portal-topbar .portal-title{font-size:13px;font-weight:900;letter-spacing:1.4px}.portal-topbar .portal-title span{color:var(--cyan)}.portal-top-actions{display:flex;align-items:center;gap:10px}.portal-icon-btn{width:38px;height:38px;border-radius:9px;border:1px solid rgba(0,234,255,.2);background:rgba(0,234,255,.05);color:var(--cyan)}
 .portal-welcome{position:relative;overflow:hidden;border:1px solid rgba(0,234,255,.25);border-radius:15px;padding:24px;margin-bottom:20px;background:linear-gradient(100deg,rgba(14,9,30,.98),rgba(17,11,39,.86)),radial-gradient(circle at 80% 20%,rgba(157,78,221,.25),transparent 40%);box-shadow:0 0 30px rgba(0,234,255,.05)}
@@ -58,7 +47,7 @@
 .portal-main .card{border-radius:12px;padding:20px}
 .portal-section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.portal-section-head h3{margin:0}.portal-section-head small{color:var(--cyan)}
 .materials-card{margin:0 0 20px;border-color:rgba(157,78,221,.3)!important}
-.materials-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.materials-toolbar input,.materials-toolbar select{flex:1;min-width:150px}
+.materials-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.materials-toolbar input,.materials-toolbar select{flex:1;min-width:150px}.referral-code-badge{font-family:monospace;letter-spacing:1px;color:var(--cyan)}
 .materials-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .material-item{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid rgba(0,234,255,.15);border-radius:10px;background:rgba(0,234,255,.025)}
 .material-icon{width:42px;height:42px;flex:0 0 42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;background:linear-gradient(135deg,rgba(0,234,255,.15),rgba(157,78,221,.18));border:1px solid rgba(0,234,255,.2)}
@@ -69,7 +58,7 @@
 .portal-mobile-menu{display:none}
 @media(max-width:900px){.portal-shell{grid-template-columns:1fr}.portal-sidebar{display:none}.portal-main{padding:15px 4% 85px}.portal-topbar{padding-top:4px}.portal-bottom-nav{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:1000;grid-template-columns:repeat(5,1fr);padding:8px 6px;background:rgba(5,4,11,.96);backdrop-filter:blur(15px);border-top:1px solid rgba(0,234,255,.2)}.portal-bottom-nav button{border:0;background:none;color:var(--muted);font-size:9px;font-weight:800;padding:5px}.portal-bottom-nav button span{display:block;font-size:16px;margin-bottom:2px}.portal-bottom-nav button:hover{color:var(--cyan)}.materials-list{grid-template-columns:1fr}.upload-grid{grid-template-columns:1fr}.portal-main .stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.portal-main{padding:12px 4% 80px}.portal-topbar .portal-title{font-size:11px}.portal-top-actions .btn{padding:8px 10px}.portal-welcome{padding:18px}.portal-welcome h1{font-size:21px}.portal-main .card{padding:16px}.portal-main .stats{gap:9px}.portal-main .stat{padding:14px}.portal-main .stat strong{font-size:23px}}
-</style>
+@media(max-width:900px){.portal-sidebar{padding:10px 3%;flex-wrap:wrap}.portal-brand{width:auto}.portal-menu{order:3;width:100%;flex-basis:100%}.portal-live-mini{margin-left:auto}.portal-main{padding:18px 3% 30px}}</style>
 </head>
 <body>
 <nav class="navbar" id="mainNav"><a href="#" class="logo" onclick="showHome()">KHALI<span>LEAGUE</span></a><div class="nav-links"><a href="#about">About</a><a href="#games">Games</a><a href="#register">Register</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div><div class="nav-actions"><button class="btn purple" onclick="openAdminLogin()">ADMIN</button><button class="btn primary" onclick="openStudentLogin()">ACCOUNT</button></div></nav>
@@ -77,7 +66,7 @@
 <section class="hero"><div class="hero-content"><div class="badge">SCHOOL GAMING LEAGUE</div><h1>KHali<span>LEAGUE</span></h1><p>A competitive school gaming platform where students represent their schools, compete across multiple games, earn league points, build their gamer identity and have fun.</p><div class="hero-buttons"><button class="btn primary" onclick="scrollToSection('register')">REGISTER A STUDENT</button><button class="btn" onclick="scrollToSection('games')">VIEW GAMES</button><button class="btn purple" onclick="openStudentLogin()">STUDENT LOGIN</button></div></div></section>
 <section id="about"><div class="section-head"><div class="mini">WHY KHALI LEAGUE</div><h2>Gaming With A Purpose.</h2><p>Students compete, connect and develop a competitive identity through organized gaming.</p></div><div class="about-grid"><div class="card"><div class="card-icon">🏫</div><h3>Represent Your School</h3><p>Students register under their schools and compete as school representatives.</p></div><div class="card"><div class="card-icon">🎮</div><h3>Multiple Games</h3><p>Choose from football, basketball, fighting, racing, battle royale and many other games.</p></div><div class="card"><div class="card-icon">🏆</div><h3>Track Progress</h3><p>Earn points, follow your rank and see how you compare with other registered gamers.</p></div><div class="card"><div class="card-icon">⚡</div><h3>Gamer Identity</h3><p>Every student gets a gamer nickname and personal profile inside the league.</p></div></div></section>
 <section id="games"><div class="section-head"><div class="mini">COMPETE</div><h2>Choose Your Game.</h2><p>Register for the games you want to compete in.</p></div><div class="games-grid" id="gamesGrid"></div></section>
-<section id="register"><div class="section-head"><div class="mini">JOIN THE LEAGUE</div><h2>Student Registration</h2><p>Create your Khali League gamer account.</p></div><div class="form-container"><form id="registrationForm"><div class="form-grid"><div class="form-group"><label>Student Name *</label><input id="regName" required placeholder="Full name"></div><div class="form-group"><label>School ID *</label><input id="regSchoolId" required placeholder="School admission / ID"></div><div class="form-group"><label>Gamer Nickname *</label><input id="regNickname" required placeholder="e.g. Khalifa"></div><div class="form-group"><label>School Name *</label><input id="regSchool" required placeholder="School name"></div><div class="form-group"><label>Form / Class *</label><select id="regClass" required><option value="">Select class</option><option>Form 1</option><option>Form 2</option><option>Form 3</option><option>Form 4</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select></div><div class="form-group"><label>Gender *</label><select id="regGender" required><option value="">Select gender</option><option>Male</option><option>Female</option><option>Other</option></select></div><div class="form-group"><label>Email *</label><input type="email" id="regEmail" required placeholder="student@email.com"></div><div class="form-group"><label>Create Password *</label><input type="password" id="regPassword" required minlength="6" placeholder="Minimum 6 characters"></div><div class="form-group full"><label>Select Games *</label><div class="checkbox-grid" id="registrationGames"></div></div><div class="form-group full"><button class="btn primary" type="submit">CREATE GAMER ACCOUNT</button><div id="registrationMessage" class="form-message"></div></div></div></form></div></section>
+<section id="register"><div class="section-head"><div class="mini">JOIN THE LEAGUE</div><h2>Student Registration</h2><p>Create your Khali League gamer account.</p></div><div class="form-container"><form id="registrationForm"><div class="form-grid"><div class="form-group"><label>Student Name *</label><input id="regName" required placeholder="Full name"></div><div class="form-group"><label>School ID *</label><input id="regSchoolId" required placeholder="School admission / ID"></div><div class="form-group"><label>Gamer Nickname *</label><input id="regNickname" required placeholder="e.g. Khalifa"></div><div class="form-group"><label>School Name *</label><input id="regSchool" required placeholder="School name"></div><div class="form-group"><label>Form / Class *</label><select id="regClass" required><option value="">Select class</option><option>Form 1</option><option>Form 2</option><option>Form 3</option><option>Form 4</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select></div><div class="form-group"><label>Gender *</label><select id="regGender" required><option value="">Select gender</option><option>Male</option><option>Female</option><option>Other</option></select></div><div class="form-group"><label>Email *</label><input type="email" id="regEmail" required placeholder="student@email.com"></div><div class="form-group"><label>Create Password *</label><input type="password" id="regPassword" required minlength="6" placeholder="Minimum 6 characters"></div><div class="form-group"><label>Referral Code (optional)</label><input id="regReferralCode" maxlength="20" placeholder="e.g. KL-AB12CD34" autocomplete="off"><small style="color:var(--muted);font-size:10px">Enter the special code of the student who invited you.</small></div><div class="form-group full"><label>Select Games *</label><div class="checkbox-grid" id="registrationGames"></div></div><div class="form-group full"><button class="btn primary" type="submit">CREATE GAMER ACCOUNT</button><div id="registrationMessage" class="form-message"></div></div></div></form></div></section>
 <section id="reviews"><div class="section-head"><div class="mini">COMMUNITY</div><h2>Player Reviews.</h2><p>Registered students can leave reviews from their accounts.</p></div><div id="publicReviews" class="reviews-grid"></div></section>
 <section id="contact"><div class="section-head"><div class="mini">CONTACT</div><h2>Connect With Khali League.</h2><p>Questions, partnerships, school registration or gaming events? Reach out.</p></div><div class="about-grid"><div class="card"><div class="card-icon">📧</div><h3>Email</h3><p>khalileague@gmail.com</p></div><div class="card"><div class="card-icon">🎵</div><h3>TikTok</h3><p>@khali.league</p></div><div class="card"><div class="card-icon">🎮</div><h3>Community</h3><p>Represent your school. Play. Compete. Improve.</p></div><div class="card"><div class="card-icon">🏆</div><h3>League</h3><p>School gaming competition built for students.</p></div></div></section>
 </main>
@@ -92,17 +81,29 @@
     <button onclick="portalGo('liveSection')">🔴 &nbsp; Live Class</button>
     <button onclick="portalGo('fixturesSection')">⚔️ &nbsp; Fixtures</button>
     <button onclick="portalGo('leaderboardSection')">🏆 &nbsp; Leaderboard</button>
-    <button onclick="portalGo('gamesSection')">🎮 &nbsp; My Games</button>
+    <button onclick="portalGo('profileSection')">👤 &nbsp; Profile</button><button onclick="portalGo('gamesSection')">🎮 &nbsp; My Games</button>
     <button onclick="portalGo('feedbackSection')">⭐ &nbsp; Feedback</button>
   </nav>
   <div class="portal-live-mini"><strong>🟢 LIVE CLASS</strong><p id="sideLiveText">Teacher status will appear here.</p><button class="btn" onclick="portalGo('liveSection')">JOIN CLASS</button></div>
 </aside>
 <div class="portal-main">
 <div class="portal-topbar" id="portalTop"><div class="portal-title"><span>KHali League</span> — SCHOOL GAMING LEAGUE</div><div class="portal-top-actions"><button class="portal-icon-btn" title="Notifications">🔔</button><button class="btn purple" onclick="openEditProfile()">👤 <span id="topStudentName">PROFILE</span></button><button class="btn danger" onclick="studentLogout()">LOG OUT</button></div></div>
-<div class="portal-welcome"><div class="dashboard-top"><div class="welcome"><div class="avatar" id="studentAvatar">K</div><div><h1>Welcome, <span id="dashboardName">Gamer</span> 👋</h1><p id="dashboardNickname">@gamer</p><p style="margin-top:5px;color:var(--muted)">Student Portal • Play • Compete • Represent</p></div></div><div class="dashboard-actions"><button class="btn" onclick="openEditProfile()">EDIT PROFILE</button></div></div></div>
-<div id="liveSection"><div class="welcome"><div class="avatar" id="studentAvatar">K</div><div><h1>Welcome, <span id="dashboardName">Gamer</span> 👋</h1><p id="dashboardNickname">@gamer</p></div></div><div class="dashboard-actions"><button class="btn" onclick="openEditProfile()">EDIT PROFILE</button><button class="btn danger" onclick="studentLogout()">LOG OUT</button></div></div>
+<div class="portal-welcome"><div class="welcome"><div class="avatar" id="portalWelcomeAvatar">K</div><div><h1>WELCOME BACK, <span id="portalWelcomeName">STUDENT</span>!</h1><p id="portalWelcomeMeta">Student portal • Your account details will appear here.</p></div></div></div>
+
+<div id="liveSection">
 <div id="studentLiveCard" class="card live-card hidden"><div class="live-head"><div class="live-title"><span class="live-dot" id="studentLiveDot"></span><h3>🔴 LIVE CLASS</h3><span class="live-status" id="studentLiveStatus">🟢 TEACHER IS LIVE</span></div><button class="btn primary" id="joinLiveBtn" onclick="studentJoinLive()">JOIN CLASS</button></div><div id="studentLiveRoom" class="hidden"><div class="live-grid"><div><div class="video-stack"><div class="video-box"><video id="studentTeacherVideo" autoplay playsinline></video><div class="video-label">TEACHER CAMERA</div></div><div class="video-box"><video id="studentScreenVideo" autoplay playsinline></video><div class="video-label">SHARED SCREEN</div></div></div><p class="share-note">Allow camera/microphone only if the browser requests permission for the classroom connection.</p></div><div><div class="chat-box"><div class="chat-messages" id="studentChatMessages"></div><div class="chat-input"><input id="studentChatInput" placeholder="Type a message..."><button class="btn primary" onclick="sendLiveChat('student')">SEND</button></div></div></div></div><div style="margin-top:12px"><button class="btn danger" onclick="leaveLiveClass()">LEAVE CLASS</button></div></div></div></div>
 <div class="stats"><div class="stat"><small>LEAGUE POINTS</small><strong id="dashPoints">0</strong></div><div class="stat"><small>CURRENT RANK</small><strong id="dashRank">#-</strong></div><div class="stat"><small>REGISTERED GAMES</small><strong id="dashGames">0</strong></div><div class="stat"><small>REFLEX BEST</small><strong id="dashReflex">—</strong></div></div>
+<div class="card" style="margin:20px 0">
+  <div class="portal-section-head"><h3>🎁 INVITE STUDENTS</h3><small>Earn 5 league points for every new student who registers through your link.</small></div>
+  <div class="form-group">
+    <label>Your referral link</label>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <input id="studentReferralLink" readonly style="flex:1;min-width:240px">
+      <button class="btn primary" onclick="copyReferralLink()">COPY LINK</button>
+    </div>
+  </div>
+  <p id="referralStatus" style="color:var(--muted);font-size:12px;margin-top:8px">Share your link. Points are added automatically after a successful registration.</p>
+</div>
 <section id="materialsSection" class="card materials-card">
   <div class="portal-section-head"><h3>📚 Learning Materials</h3><small>Pictures • PDFs • Videos • Documents</small></div>
   <p style="color:var(--muted);font-size:12px;margin-bottom:13px">Download materials posted by the administrator, or upload a file for the school/league team when requested.</p>
@@ -121,11 +122,29 @@
   </div>
 </section>
 
-<div class="dashboard-grid" id="gamesSection"><div class="card"><h3>👤 My Profile</h3><br><div class="profile-info"><div class="info-item"><small>NAME</small><span id="profileName">—</span></div><div class="info-item"><small>SCHOOL ID</small><span id="profileSchoolId">—</span></div><div class="info-item"><small>SCHOOL</small><span id="profileSchool">—</span></div><div class="info-item"><small>CLASS</small><span id="profileClass">—</span></div><div class="info-item"><small>GENDER</small><span id="profileGender">—</span></div><div class="info-item"><small>EMAIL</small><span id="profileEmail">—</span></div></div><br><h3>🎮 My Games</h3><br><div class="game-list" id="myGames"></div></div><div class="card"><h3>📢 Announcements</h3><br><div id="studentAnnouncements"></div></div></div>
-<div class="card" style="margin-bottom:20px" id="fixturesSection"><h3>⚔️ My Fixtures</h3><br><div id="studentFixtures"></div></div><div class="card" style="margin-bottom:20px" id="leaderboardSection"><h3>🏆 League Leaderboard</h3><br><div style="overflow-x:auto"><table class="leaderboard"><thead><tr><th>RANK</th><th>GAMER</th><th>SCHOOL</th><th>POINTS</th></tr></thead><tbody id="leaderboardBody"></tbody></table></div></div>
+<div class="dashboard-grid" id="profileSection"><div class="card"><h3>👤 My Profile</h3><br><div class="profile-stats" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 18px">
+<div class="stat"><small>LEAGUE POINTS</small><strong id="profilePoints">0</strong></div>
+<div class="stat"><small>REFLEX BEST</small><strong id="profileReflex">—</strong></div>
+<div class="stat"><small>SUCCESSFUL REFERRALS</small><strong id="profileReferrals">0</strong></div>
+</div>
+<div class="profile-details" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:18px">
+<div class="info-item"><small>FULL NAME</small><span id="profileFullName">—</span></div>
+<div class="info-item"><small>NICKNAME</small><span id="profileNickname">—</span></div>
+<div class="info-item"><small>EMAIL</small><span id="profileEmail">—</span></div>
+<div class="info-item"><small>SCHOOL ID</small><span id="profileSchoolId">—</span></div>
+<div class="info-item"><small>SCHOOL</small><span id="profileSchool">—</span></div>
+<div class="info-item"><small>CLASS</small><span id="profileClass">—</span></div>
+<div class="info-item"><small>GENDER</small><span id="profileGender">—</span></div>
+<div class="info-item"><small>ACCOUNT TYPE</small><span>Student</span></div>
+</div><div class="card" style="margin:16px 0;padding:14px;background:rgba(157,78,221,.05)">
+<h4>🎁 YOUR REGISTRATION LINK</h4>
+<p style="color:var(--muted);font-size:12px;margin:6px 0 10px">Share this link. You earn 5 league points for every new student who successfully registers through it.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><input id="profileReferralCode" readonly style="max-width:180px" placeholder="Generating code..."><input id="profileReferralLink" readonly style="flex:1;min-width:220px"><button class="btn primary" onclick="copyReferralCode()">COPY CODE</button><button class="btn primary" onclick="copyReferralLink()">COPY LINK</button><button class="btn" onclick="shareReferralLink()">SHARE</button></div>
+<small id="profileReferralStatus" style="display:block;color:var(--muted);margin-top:8px">Your link is generated automatically when you register or log in.</small>
+</div><br><h3 id="gamesSection">🎮 My Games</h3><br><div class="game-list" id="myGames"></div></div><div class="card"><h3>📢 Announcements</h3><br><div id="studentAnnouncements"></div></div></div>
+<div class="card" style="margin-bottom:20px" id="fixturesSection"><h3>⚔️ My Fixtures</h3><br><div id="studentFixtures"></div></div><div class="card" style="margin-bottom:20px" id="activeStudentsSection"><div class="portal-section-head"><h3>🟢 Active Students</h3><small id="activeStudentsCount">0 students online</small></div><p style="color:var(--muted);font-size:12px;margin-bottom:12px">Students currently active on Khali League.</p><div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>GAMER</th><th>NAME</th><th>SCHOOL</th><th>CLASS</th><th>STATUS</th></tr></thead><tbody id="activeStudentsBody"></tbody></table></div></div><div class="card" style="margin-bottom:20px" id="leaderboardSection"><h3>🏆 League Leaderboard</h3><br><div style="overflow-x:auto"><table class="leaderboard"><thead><tr><th>RANK</th><th>GAMER</th><th>SCHOOL</th><th>POINTS</th></tr></thead><tbody id="leaderboardBody"></tbody></table></div></div>
 <div class="card" style="margin-bottom:20px"><h3>⚡ KHALI REFLEX</h3><p style="color:var(--muted);margin-top:7px">Test your reaction speed. Click the target as quickly as possible. Five rounds. Your best score is saved to your account.</p><br><button class="btn primary" id="reflexStart" onclick="startReflexGame()">START GAME</button><div class="reflex-game" id="reflexArea"><div id="reflexTarget" class="reflex-target" onclick="hitReflexTarget()"></div><div id="reflexMessage" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);text-align:center;padding:20px">Press START GAME</div></div><div class="game-hud"><span id="reflexRound">Round: 0/5</span><span id="reflexCurrent">Current: —</span><span id="reflexAverage">Average: —</span></div></div>
-<div class="dashboard-grid" id="feedbackSection"><div class="card"><h3>⭐ Rate Khali League</h3><p style="color:var(--muted);font-size:13px;margin-top:7px">Your review is attached to your account.</p><br><div class="form-group"><label>Rating</label><select id="studentRating"><option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Very Good</option><option value="3">★★★☆☆ — Good</option><option value="2">★★☆☆☆ — Needs Improvement</option><option value="1">★☆☆☆☆ — Poor</option></select></div><br><div class="form-group"><label>Your Review</label><textarea id="studentReview" placeholder="Tell us what you think about Khali League..."></textarea></div><br><button class="btn primary" onclick="submitStudentReview()">SUBMIT REVIEW</button><div id="reviewMessage" class="form-message"></div></div><div class="card"><h3>💡 Send Suggestion</h3><p style="color:var(--muted);font-size:13px;margin-top:7px">Help us improve the league.</p><br><div class="form-group"><label>Category</label><select id="suggestionCategory"><option>Games</option><option>Tournaments</option><option>Website</option><option>School League</option><option>Other</option></select></div><br><div class="form-group"><label>Suggestion</label><textarea id="studentSuggestion" placeholder="What should Khali League add or improve?"></textarea></div><br><button class="btn purple" onclick="submitSuggestion()">SEND SUGGESTION</button><div id="suggestionMessage" class="form-message"></div></div>
-<div class="portal-bottom-nav">
+<div class="dashboard-grid" id="feedbackSection"><div class="card"><h3>⭐ Rate Khali League</h3><p style="color:var(--muted);font-size:13px;margin-top:7px">Your review is attached to your account.</p><br><div class="form-group"><label>Rating</label><select id="studentRating"><option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Very Good</option><option value="3">★★★☆☆ — Good</option><option value="2">★★☆☆☆ — Needs Improvement</option><option value="1">★☆☆☆☆ — Poor</option></select></div><br><div class="form-group"><label>Your Review</label><textarea id="studentReview" placeholder="Tell us what you think about Khali League..."></textarea></div><br><button class="btn primary" onclick="submitStudentReview()">SUBMIT REVIEW</button><div id="reviewMessage" class="form-message"></div></div><div class="portal-bottom-nav">
   <button onclick="portalGo('portalTop')"><span>★</span>Dashboard</button>
   <button onclick="portalGo('materialsSection')"><span>📚</span>Materials</button>
   <button onclick="portalGo('liveSection')"><span>🔴</span>Live</button>
@@ -134,10 +153,10 @@
 </div>
 </div></section>
 <section id="adminPage" class="admin-page hidden"><div class="admin-header"><div><p>Khali League Management</p><h1>ADMIN CONTROL CENTER</h1></div><button class="btn danger" onclick="adminLogout()">ADMIN LOG OUT</button></div>
-<div id="adminLiveCard" class="card live-card" style="margin-bottom:20px"><div class="live-head"><div><div class="live-title"><span class="live-dot off" id="adminLiveDot"></span><h3>🎥 LIVE CLASSROOM</h3><span class="live-status" id="adminLiveStatus">Offline</span></div><p class="share-note">Start a live lesson. Students will see the live indicator on their dashboards.</p></div><div class="dashboard-actions"><button class="btn green" id="startLiveBtn" onclick="startLiveClass()">START LIVE CLASS</button><button class="btn danger hidden" id="endLiveBtn" onclick="endLiveClass()">END CLASS</button></div></div><div id="adminLiveRoom" class="hidden"><div class="live-grid"><div><div class="video-stack"><div class="video-box"><video id="adminTeacherVideo" autoplay muted playsinline></video><div class="video-label">YOUR CAMERA</div></div><div class="video-box"><video id="adminScreenVideo" autoplay muted playsinline></video><div class="video-label">YOUR SCREEN</div></div></div><div class="dashboard-actions" style="margin-top:10px"><button class="btn" onclick="toggleTeacherMic()" id="teacherMicBtn">🎙️ MUTE MIC</button><button class="btn purple" onclick="shareTeacherScreen()" id="shareScreenBtn">🖥️ SHARE SCREEN</button></div><div class="card" style="margin-top:12px;padding:15px"><strong>Online students: <span id="onlineStudentCount">0</span></strong><div class="online-list" id="onlineStudentList"></div></div></div><div><div class="chat-box"><div class="chat-messages" id="adminChatMessages"></div><div class="chat-input"><input id="adminChatInput" placeholder="Message the class..."><button class="btn primary" onclick="sendLiveChat('admin')">SEND</button></div></div></div></div></div></div>
-<div class="admin-stats"><div class="admin-stat"><small>STUDENTS</small><strong id="adminStudents">0</strong></div><div class="admin-stat"><small>SCHOOLS</small><strong id="adminSchools">0</strong></div><div class="admin-stat"><small>GAMES</small><strong id="adminGames">15</strong></div><div class="admin-stat"><small>TOTAL POINTS</small><strong id="adminPoints">0</strong></div><div class="admin-stat"><small>REVIEWS</small><strong id="adminReviews">0</strong></div><div class="admin-stat"><small>SUGGESTIONS</small><strong id="adminSuggestions">0</strong></div></div>
+<div id="adminLiveCard" class="card live-card" style="margin-bottom:20px"><div class="live-head"><div><div class="live-title"><span class="live-dot off" id="adminLiveDot"></span><h3>🎥 LIVE CLASSROOM</h3><span class="live-status" id="adminLiveStatus">Offline</span></div><p class="share-note">Start a live lesson. Students will see the live indicator on their dashboards.</p></div><div class="dashboard-actions"><button class="btn green" id="startLiveBtn" onclick="startLiveClass()">START LIVE CLASS</button><button class="btn danger hidden" id="endLiveBtn" onclick="endLiveClass()">END CLASS</button></div></div><div id="adminLiveRoom" class="hidden"><div class="live-grid"><div><div class="video-stack"><div class="video-box"><video id="adminTeacherVideo" autoplay muted playsinline></video><div class="video-label">YOUR CAMERA</div></div><div class="video-box"><video id="adminScreenVideo" autoplay muted playsinline></video><div class="video-label">YOUR SCREEN</div></div></div><div class="dashboard-actions" style="margin-top:10px"><button class="btn" onclick="toggleTeacherMic()" id="teacherMicBtn">🎙️ MUTE MIC</button><button class="btn purple" onclick="shareTeacherScreen()" id="shareScreenBtn">🖥️ SHARE SCREEN</button></div><div class="card" style="margin-top:12px;padding:15px"><strong>Online students: <span id="onlineStudentCount">0</span></strong><div class="online-list" id="onlineStudentList"></div></div><div class="card" style="margin-top:12px;padding:15px"><strong>Student cameras & microphones</strong><div class="video-stack" id="teacherStudentVideos" style="margin-top:10px"></div></div></div><div><div class="chat-box"><div class="chat-messages" id="adminChatMessages"></div><div class="chat-input"><input id="adminChatInput" placeholder="Message the class..."><button class="btn primary" onclick="sendLiveChat('admin')">SEND</button></div></div></div></div></div></div>
+<div class="admin-stats"><div class="admin-stat"><small>STUDENTS</small><strong id="adminStudents">0</strong></div><div class="admin-stat"><small>SCHOOLS</small><strong id="adminSchools">0</strong></div><div class="admin-stat"><small>GAMES</small><strong id="adminGames">15</strong></div><div class="admin-stat"><small>TOTAL POINTS</small><strong id="adminPoints">0</strong></div><div class="admin-stat"><small>REVIEWS</small><strong id="adminReviews">0</strong></div></div>
 <div class="card" style="margin-bottom:20px"><h3>👥 Student Management</h3><br><div class="filter-grid"><input id="studentSearch" placeholder="Search student, gamer, ID or school..." oninput="renderAdminStudents()"><select id="schoolFilter" onchange="renderAdminStudents()"><option value="">All Schools</option></select><select id="gameFilter" onchange="renderAdminStudents()"><option value="">All Games</option></select><select id="classFilter" onchange="renderAdminStudents()"><option value="">All Classes</option></select></div><div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>STUDENT</th><th>SCHOOL ID</th><th>GAMER</th><th>SCHOOL</th><th>CLASS</th><th>GAMES</th><th>POINTS</th><th>ACTIONS</th></tr></thead><tbody id="adminStudentsBody"></tbody></table></div></div>
-<div class="admin-grid"><div class="card"><h3>⚔️ Create Fixture</h3><br><form id="fixtureForm"><div class="form-group"><label>Game</label><select id="fixtureGame"></select></div><br><div class="form-grid"><div class="form-group"><label>Date</label><input type="date" id="fixtureDate" required></div><div class="form-group"><label>Time</label><input type="time" id="fixtureTime" required></div><div class="form-group"><label>Player A</label><input id="fixtureA" required placeholder="Gamer nickname"></div><div class="form-group"><label>Player B</label><input id="fixtureB" required placeholder="Gamer nickname"></div><div class="form-group full"><label>Venue / Gaming Room</label><input id="fixtureVenue" placeholder="e.g. School Computer Lab"></div><div class="form-group full"><label>Note</label><input id="fixtureNote" placeholder="Optional note"></div></div><br><button class="btn primary" type="submit">CREATE FIXTURE</button></form><br><div id="adminFixtures"></div></div><div class="card"><h3>📢 Post Announcement</h3><br><form id="announcementForm"><div class="form-group"><label>Title</label><input id="announcementTitle" required placeholder="Announcement title"></div><br><div class="form-group"><label>Message</label><textarea id="announcementMessage" required placeholder="Write announcement..."></textarea></div><br><button class="btn primary" type="submit">POST ANNOUNCEMENT</button></form><br><div id="adminAnnouncements"></div></div></div>
+<div class="card" style="margin-bottom:20px"><h3>🟢 Active Students</h3><p style="color:var(--muted);font-size:12px;margin:8px 0 12px">Students active on the website within the last 90 seconds.</p><div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>GAMER</th><th>NAME</th><th>SCHOOL</th><th>CLASS</th><th>GAMES</th><th>STATUS</th></tr></thead><tbody id="adminActiveStudentsBody"></tbody></table></div></div><div class="admin-grid"><div class="card"><h3>⚔️ Create Fixture</h3><br><form id="fixtureForm"><div class="form-group"><label>Game</label><select id="fixtureGame"></select></div><br><div class="form-grid"><div class="form-group"><label>Date</label><input type="date" id="fixtureDate" required></div><div class="form-group"><label>Time</label><input type="time" id="fixtureTime" required></div><div class="form-group"><label>Player A</label><input id="fixtureA" required placeholder="Gamer nickname"></div><div class="form-group"><label>Player B</label><input id="fixtureB" required placeholder="Gamer nickname"></div><div class="form-group full"><label>Venue / Gaming Room</label><input id="fixtureVenue" placeholder="e.g. School Computer Lab"></div><div class="form-group full"><label>Note</label><input id="fixtureNote" placeholder="Optional note"></div></div><br><button class="btn primary" type="submit">CREATE FIXTURE</button></form><br><div id="adminFixtures"></div></div><div class="card"><h3>📢 Post Announcement</h3><br><form id="announcementForm"><div class="form-group"><label>Title</label><input id="announcementTitle" required placeholder="Announcement title"></div><br><div class="form-group"><label>Message</label><textarea id="announcementMessage" required placeholder="Write announcement..."></textarea></div><br><div class="form-group"><label>Link (optional)</label><input id="announcementLink" type="url" placeholder="https://example.com"></div><br><button class="btn primary" type="submit">POST ANNOUNCEMENT</button></form><br><div id="adminAnnouncements"></div></div></div>
 
 <div class="admin-grid"><div class="card materials-card"><div class="portal-section-head"><h3>📚 Learning Materials</h3><small>Post files for students</small></div>
 <p style="color:var(--muted);font-size:12px;margin-bottom:13px">Upload PDFs, pictures, videos and documents. Students will see them in their portal.</p>
@@ -154,17 +173,17 @@
 <div id="adminMaterialsList"><p style="color:var(--muted)">No materials posted yet.</p></div>
 </div>
 <div class="card"><h3>📥 Student Uploads</h3><p style="color:var(--muted);font-size:12px;margin:7px 0 13px">Files uploaded by students for review/submission.</p><div id="adminStudentUploads"><p style="color:var(--muted)">No student uploads yet.</p></div></div></div>
-<div class="admin-grid"><div class="card"><h3>⭐ Review Management</h3><br><div id="adminReviewsList"></div></div><div class="card"><h3>💡 Student Suggestions</h3><br><div id="adminSuggestionsList"></div></div></div></section>
+<div class="admin-grid"><div class="card"><h3>⭐ Review Management</h3><br><div id="adminReviewsList"></div></div></div></section>
 <!-- MODALS -->
-<div class="modal hidden" id="studentLoginModal"><div class="modal-box"><button class="modal-close" onclick="closeModals()">×</button><h2>🎮 Student Login</h2><p>Login to access your Khali League account.</p><form id="studentLoginForm"><div class="form-group"><label>Email</label><input id="loginEmail" type="email" required></div><br><div class="form-group"><label>Password</label><input id="loginPassword" type="password" required></div><br><button class="btn primary" style="width:100%">LOGIN</button><div id="loginMessage" class="form-message"></div></form><p style="text-align:center;margin-top:12px"><a href="#" onclick="forgotStudentPassword();return false" style="color:var(--cyan)">Forgot password?</a></p><br><p style="text-align:center">Don't have an account? <a href="#register" style="color:var(--cyan)" onclick="closeModals();scrollToSection('register')">Register here</a></p></div></div>
+<div class="modal hidden" id="studentLoginModal"><div class="modal-box"><button class="modal-close" onclick="closeModals()">×</button><h2>🎮 Student Login</h2><p>Login to access your Khali League account.</p><form id="studentLoginForm"><div class="form-group"><label>Email</label><input id="loginEmail" type="email" required></div><br><div class="form-group"><label>Password</label><input id="loginPassword" type="password" required></div><br><button class="btn primary" style="width:100%">LOGIN</button><button type="button" class="btn" style="width:100%;margin-top:10px" onclick="signInWithOutlook()">🔵 CONTINUE WITH OUTLOOK</button><div id="loginMessage" class="form-message"></div></form><p style="text-align:center;margin-top:12px"><a href="#" onclick="forgotStudentPassword();return false" style="color:var(--cyan)">Forgot password?</a></p><br><p style="text-align:center">Don't have an account? <a href="#register" style="color:var(--cyan)" onclick="closeModals();scrollToSection('register')">Register here</a></p></div></div>
 <div class="modal hidden" id="adminLoginModal"><div class="modal-box"><button class="modal-close" onclick="closeModals()">×</button><h2>🔐 Admin Login</h2><p>Use the administrator Firebase Authentication account.</p><form id="adminLoginForm"><div class="form-group"><label>Admin Email</label><input id="adminEmail" type="email" required></div><br><div class="form-group"><label>Admin Password</label><input id="adminPassword" type="password" required></div><br><button class="btn purple" style="width:100%">ADMIN LOGIN</button><div id="adminLoginMessage" class="form-message"></div></form><p style="text-align:center;margin-top:12px"><a href="#" onclick="forgotAdminPassword();return false" style="color:var(--cyan)">Forgot admin password?</a></p></div></div>
 <div class="modal hidden" id="editProfileModal"><div class="modal-box"><button class="modal-close" onclick="closeModals()">×</button><h2>👤 Edit Profile</h2><p>Update your gamer profile.</p><form id="editProfileForm"><div class="form-grid"><div class="form-group"><label>Name</label><input id="editName" required></div><div class="form-group"><label>Gamer Nickname</label><input id="editNickname" required></div><div class="form-group"><label>School</label><input id="editSchool" required></div><div class="form-group"><label>Class</label><select id="editClass"></select></div><div class="form-group full"><label>Email</label><input id="editEmail" type="email" required></div><div class="form-group full"><label>Games</label><div class="checkbox-grid" id="editGames"></div></div></div><br><button class="btn primary" type="submit">SAVE PROFILE</button><div id="editMessage" class="form-message"></div></form></div></div>
 <div class="modal hidden" id="adminEditModal"><div class="modal-box"><button class="modal-close" onclick="closeModals()">×</button><h2>✏️ Edit Student</h2><p>Administrator student management.</p><form id="adminEditForm"><input type="hidden" id="adminEditOriginalUid"><div class="form-grid"><div class="form-group"><label>Name</label><input id="adminEditName" required></div><div class="form-group"><label>School ID</label><input id="adminEditSchoolId" required></div><div class="form-group"><label>Gamer Nickname</label><input id="adminEditNickname" required></div><div class="form-group"><label>School</label><input id="adminEditSchool" required></div><div class="form-group"><label>Class</label><select id="adminEditClass"></select></div><div class="form-group"><label>Gender</label><select id="adminEditGender"><option>Male</option><option>Female</option><option>Other</option></select></div><div class="form-group full"><label>Email</label><input id="adminEditEmail" type="email" required></div><div class="form-group"><label>League Points</label><input id="adminEditPoints" type="number" min="0"></div><div class="form-group"><label>New Password</label><input disabled value="Use Firebase Auth password reset for account passwords"></div><div class="form-group full"><label>Games</label><div class="checkbox-grid" id="adminEditGames"></div></div></div><br><button class="btn primary" type="submit">SAVE STUDENT</button><div id="adminEditMessage" class="form-message"></div></form></div></div>
 <footer><div>© 2026 Khali League. School Gaming League.</div><div>Play • Compete • Represent</div></footer>
 <script type="module">
 import {initializeApp} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
-import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,updateEmail,sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
-import {getFirestore,collection,doc,setDoc,updateDoc,deleteDoc,addDoc,onSnapshot,getDocs,getDoc,serverTimestamp,query,orderBy} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,updateEmail,sendPasswordResetEmail,signInWithPopup,OAuthProvider} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+import {getFirestore,collection,doc,setDoc,updateDoc,deleteDoc,addDoc,onSnapshot,getDocs,getDoc,serverTimestamp,query,orderBy,where,runTransaction} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 import {getStorage,ref,uploadBytes,getDownloadURL,deleteObject} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-storage.js";
 
 /* ================= FIREBASE CONFIG =================
@@ -178,7 +197,7 @@ const usersPath="users",reviewsPath="reviews",suggestionsPath="suggestions",fixt
 const classes=["Form 1","Form 2","Form 3","Form 4","Grade 7","Grade 8","Grade 9","Grade 10","Grade 11","Grade 12"];
 const games=[
 {name:"EA SPORTS FC",image:"https://gameplay.com.co/cdn/shop/files/Juego-FC26-Xbox-Series-X_eb2fe44f-4eb4-4437-9760-cdfdaace6f5f.jpg?v=1753068922"},{name:"NBA 2K",image:"https://down-vn.img.susercontent.com/file/vn-11134207-820l4-medruhfaq1he86"},{name:"eFootball",image:"https://images.pushsquare.com/9fdcaf5911a61/efootball-cover.cover_large.jpg"},{name:"PUBG",image:"https://i5.walmartimages.com/seo/Playerunknown-s-Battlegrounds-Sony-PlayStation-4-711719527381_102da893-7bab-4c2d-8874-dc6ae7d24fbb_1.c85b0e8a92bdbbbefa5731e494a32101.jpeg"},{name:"Free Fire",image:"https://cdkp.b-cdn.net/images/games/5622126/cover.jpg"},{name:"Call of Duty",image:"https://www.mobygames.com/images/covers/l/602324-call-of-duty-modern-warfare-xbox-one-front-cover.jpg"},{name:"Fortnite",image:"https://www.pcgamingwiki.com/wiki/Special:Redirect/file/Fortnite_Battle_Royale_cover.jpg"},{name:"Tekken",image:"https://media.gamestop.com/i/gamestop/20005404-680826cd"},{name:"Mortal Kombat",image:"https://images.pushsquare.com/7ce51d0661507/mortal-kombat-1-cover.cover_large.jpg"},{name:"Street Fighter",image:"https://d2j6dbq0eux0bg.cloudfront.net/images/118342017/products/755227761/5678925877.png"},{name:"Rocket League",image:"https://www.buygames.ps/1492/rocket-league-ps4.jpg"},{name:"Grand Theft Auto",image:"https://cdn.shopify.com/s/files/1/0604/6177/6957/files/file_5.png?v=1737815798"},{name:"Minecraft",image:"https://ethlan.fr/img/jeux/121.jpg"},{name:"Need for Speed",image:"https://i5.walmartimages.com/asr/8096889d-1791-44c1-86dd-dd1d9f011c85_1.804a59465de8a8009b2f9a5ba79d6d29.jpeg"},{name:"Brawlhalla",image:"https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/291550/5a626cc4b6ecf79d47927d771dfad799b7f1b145/header_alt_assets_11.jpg?t=1787157167"}];
-let usersCache={},reviewsCache={},suggestionsCache={},fixturesCache={},announcementsCache={};let currentUser=null,isAdminUser=false;let liveActive=false,teacherStream=null,teacherScreenStream=null,teacherPeers=new Map(),teacherScreenPeers=new Map(),studentPeer=null,studentScreenPeer=null;let liveListenersStarted=false;
+let usersCache={},reviewsCache={},suggestionsCache={},fixturesCache={},announcementsCache={};let currentUser=null,isAdminUser=false;let activityHeartbeat=null;let liveActive=false,teacherStream=null,teacherScreenStream=null,teacherPeers=new Map(),teacherScreenPeers=new Map(),studentPeer=null,studentScreenPeer=null;let liveListenersStarted=false;
 const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
 const values=obj=>Object.entries(obj||{}).map(([id,v])=>({...v,id}));
 function showMsg(id,text,ok=false){const e=$(id);e.className="form-message "+(ok?"success":"error");e.textContent=text}
@@ -196,12 +215,42 @@ function documentRef(path,id){return doc(db,path,id)}
 async function addRecord(path,data){const r=await addDoc(collectionRef(path),data);return r.id}
 async function deleteAllDocs(path){const snap=await getDocs(collectionRef(path));await Promise.all(snap.docs.map(d=>deleteDoc(d.ref)))}
 async function deleteAllDocsAtPath(parts){const snap=await getDocs(collection(db,...parts));await Promise.all(snap.docs.map(d=>deleteDoc(d.ref)))}
-function openStudentDashboard(){if(!currentUser){openStudentLogin();return}$("publicSite").classList.add("hidden");$("adminPage").classList.add("hidden");$("studentDashboard").classList.remove("hidden");renderStudentDashboard();scrollTo(0,0)}
-function openAdminDashboard(){if(!isAdminUser){openAdminLogin();return}$("publicSite").classList.add("hidden");$("studentDashboard").classList.add("hidden");$("adminPage").classList.remove("hidden");renderAdmin();renderAdminMaterials();scrollTo(0,0)}
-function renderStudentDashboard(){const u=currentUser;if(!u)return;$("dashboardName").textContent=u.name;$("dashboardNickname").textContent="@"+u.nickname;$("studentAvatar").textContent=(u.nickname||u.name||"K")[0].toUpperCase();if($("sideAvatar"))$("sideAvatar").textContent=(u.nickname||u.name||"K")[0].toUpperCase();if($("sideName"))$("sideName").textContent=u.name||"Gamer";if($("sideNickname"))$("sideNickname").textContent="@"+(u.nickname||"gamer");if($("topStudentName"))$("topStudentName").textContent=u.nickname||"PROFILE";$("dashPoints").textContent=u.points||0;$("dashGames").textContent=(u.games||[]).length;$("dashReflex").textContent=u.reflexBest?u.reflexBest+" ms":"—";const ranked=getUsers().sort((a,b)=>(b.points||0)-(a.points||0));const rank=ranked.findIndex(x=>x.id===u.id)+1;$("dashRank").textContent=rank>0?"#"+rank:"#-";["Name","SchoolId","School","Class","Gender","Email"].forEach(k=>$("profile"+k).textContent=u[k.charAt(0).toLowerCase()+k.slice(1)]||"—");$("myGames").innerHTML=(u.games||[]).map(g=>`<span class="game-pill">${esc(g)}</span>`).join("");renderStudentAnnouncements();renderStudentFixtures();renderLeaderboard();updateStudentLiveCard()}
-function renderStudentAnnouncements(){const d=getAnnouncements().reverse();$("studentAnnouncements").innerHTML=d.length?d.slice(0,8).map(x=>`<div class="announcement"><h4>${esc(x.title)}</h4><p>${esc(x.message)}</p></div>`).join(""):`<p style="color:var(--muted)">No announcements yet.</p>`}
+function openStudentDashboard(){if(!currentUser){openStudentLogin();return}$("publicSite").classList.add("hidden");$("adminPage").classList.add("hidden");$("studentDashboard").classList.remove("hidden");renderStudentDashboard();restorePortalSection()}
+function openAdminDashboard(){if(!isAdminUser){openAdminLogin();return}$("publicSite").classList.add("hidden");$("studentDashboard").classList.add("hidden");$("adminPage").classList.remove("hidden");renderAdmin();renderAdminMaterials();restorePortalSection()}
+function setText(id,value,fallback="—"){const el=$(id);if(el)el.textContent=(value!==undefined&&value!==null&&String(value).trim()!=="")?String(value):fallback}
+function renderStudentDashboard(){
+  const u=currentUser;if(!u)return;
+  const name=u.name||u.displayName||"Student", nick=u.nickname||"gamer", school=u.school||"Not set", cls=u.className||"Not set", email=u.email||auth.currentUser?.email||"Not set", schoolId=u.schoolId||"Not set", gender=u.gender||"Not set";
+  setText("dashboardName",name);setText("dashboardNickname","@"+nick);setText("sideName",name,"Gamer");setText("sideNickname","@"+nick,"@gamer");setText("topStudentName",nick,"PROFILE");
+  const initial=(nick||name||"K")[0].toUpperCase();setText("sideAvatar",initial,"K");setText("portalWelcomeAvatar",initial,"K");setText("portalWelcomeName",name,"STUDENT");
+  setText("portalWelcomeMeta",`${cls} Student • ${school} • School ID: ${schoolId}`,"Student portal");
+  setText("dashPoints",Number(u.points)||0,"0");setText("dashGames",(u.games||[]).length,"0");setText("dashReflex",u.reflexBest?u.reflexBest+" ms":"—");
+  setText("profilePoints",Number(u.points)||0,"0");setText("profileReflex",u.reflexBest?u.reflexBest+" ms":"—");setText("profileReferrals",Number(u.referralCount)||0,"0");
+  setText("profileFullName",name);setText("profileName",name);setText("profileNickname",nick?"@"+nick:"");setText("profileEmail",email);setText("profileSchoolId",schoolId);setText("profileSchool",school);setText("profileClass",cls);setText("profileGender",gender);
+  if($('profileReferralCode'))$('profileReferralCode').value=u.referralCode||"";
+  if($('profileReferralLink'))$('profileReferralLink').value=getReferralLink();
+  if($('profileReferralStatus'))$('profileReferralStatus').textContent=`${Number(u.referralCount)||0} successful referral${Number(u.referralCount||0)===1?"":"s"} • 5 points added for every successful registration`;
+  const ranked=getUsers().filter(isStudentRecord).sort((a,b)=>(Number(b.points)||0)-(Number(a.points)||0));const rank=ranked.findIndex(x=>x.id===u.id)+1;setText("dashRank",rank>0?"#"+rank:"#-","#-");
+  const games=u.games||[];const mg=$('myGames');if(mg)mg.innerHTML=games.map(g=>`<span class="game-pill">${esc(g)}</span>`).join("")||'<span style="color:var(--muted)">No games registered yet.</span>';
+  renderStudentAnnouncements();renderStudentFixtures();renderActiveStudents();renderLeaderboard();updateStudentLiveCard();renderReferralCard();
+}
+function safeUrl(raw){const v=String(raw||"").trim();if(!v)return "";try{const u=new URL(v,location.href);return (u.protocol==="http:"||u.protocol==="https:")?u.href:""}catch(e){return ""}}
+function linkifyAnnouncementText(raw){const text=String(raw||""),re=/(https?:\/\/[^\s<]+)/gi;let out="",last=0,m;while((m=re.exec(text))){out+=esc(text.slice(last,m.index));const clean=m[0].replace(/[),.;!?]+$/,""),url=safeUrl(clean);out+=url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="announcement-link">${esc(clean)}</a>`:esc(m[0]);last=m.index+m[0].length}return out+esc(text.slice(last))}
+async function copyAnnouncementLink(url,id){const clean=safeUrl(url);if(!clean)return;try{await navigator.clipboard.writeText(clean)}catch(e){const ta=document.createElement("textarea");ta.value=clean;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove()}const b=$("copyAnn_"+id);if(b){b.textContent="COPIED ✓";setTimeout(()=>b.textContent="COPY LINK",1500)}}
+window.copyAnnouncementLink=copyAnnouncementLink;
+function renderStudentAnnouncements(){const d=getAnnouncements().sort((a,b)=>(b.date||0)-(a.date||0));$("studentAnnouncements").innerHTML=d.length?d.slice(0,8).map(x=>{const inline=(String(x.message||"").match(/https?:\/\/[^\s<]+/i)||[])[0],url=safeUrl(x.link)||safeUrl(inline);return `<div class="announcement"><h4>${esc(x.title)}</h4><p>${linkifyAnnouncementText(x.message)}</p>${url?`<div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:10px"><a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener noreferrer">OPEN LINK ↗</a><button class="small-btn" id="copyAnn_${esc(x.id)}" onclick="copyAnnouncementLink('${esc(url)}','${esc(x.id)}')">COPY LINK</button></div>`:""}</div>`}).join(""):`<p style="color:var(--muted)">No announcements yet.</p>`}
 function renderStudentFixtures(){const u=currentUser;if(!u)return;const d=getFixtures().filter(f=>(u.games||[]).includes(f.game)||(f.playerA||"").toLowerCase()===(u.nickname||"").toLowerCase()||(f.playerB||"").toLowerCase()===(u.nickname||"").toLowerCase());$("studentFixtures").innerHTML=d.length?d.reverse().map(f=>`<div class="fixture"><div class="fixture-top"><span>${esc(f.game)}</span><span>${esc(f.date)} • ${esc(f.time)}</span></div><div class="fixture-match">${esc(f.playerA)} VS ${esc(f.playerB)}</div><div class="fixture-meta">${esc(f.venue||"Venue TBA")}${f.note?" • "+esc(f.note):""}</div></div>`).join(""):`<p style="color:var(--muted)">No fixtures have been created for you yet.</p>`}
-function renderLeaderboard(){const d=getUsers().sort((a,b)=>(b.points||0)-(a.points||0));$("leaderboardBody").innerHTML=d.length?d.slice(0,20).map((u,i)=>`<tr><td class="rank">#${i+1}</td><td>${esc(u.nickname)}</td><td>${esc(u.school)}</td><td>${u.points||0}</td></tr>`).join(""):`<tr><td colspan="4">No players yet.</td></tr>`}
+function renderLeaderboard(){const d=getUsers().filter(u=>u.role!=="admin"&&u.email?.toLowerCase()!==ADMIN_EMAIL.toLowerCase()).sort((a,b)=>((+b.points||0)-(+a.points||0))||String(a.nickname||"").localeCompare(String(b.nickname||"")));$("leaderboardBody").innerHTML=d.length?d.map((u,i)=>`<tr><td class="rank">#${i+1}</td><td>${esc(u.nickname||"—")}</td><td>${esc(u.school||"—")}</td><td>${u.points||0}</td></tr>`).join(""):`<tr><td colspan="4">No players yet.</td></tr>`}
+function isStudentRecord(u){return !!u&&u.role!=="admin"&&u.email?.toLowerCase()!==ADMIN_EMAIL.toLowerCase()}
+function isStudentActive(u){return isStudentRecord(u)&&Number(u.lastActiveAt||0)>Date.now()-90000}
+function renderActiveStudents(){
+  const d=getUsers().filter(isStudentActive).sort((a,b)=>String(a.nickname||a.name||"").localeCompare(String(b.nickname||b.name||"")));
+  const count=$("activeStudentsCount"),body=$("activeStudentsBody");
+  if(count)count.textContent=`${d.length} student${d.length===1?"":"s"} online`;
+  if(body)body.innerHTML=d.length?d.map(u=>`<tr><td style="color:var(--cyan);font-weight:800">${esc(u.nickname||"—")}</td><td>${esc(u.name||"—")}</td><td>${esc(u.school||"—")}</td><td>${esc(u.className||"—")}</td><td><span style="color:var(--green);font-weight:800">● ONLINE</span></td></tr>`).join(""):`<tr><td colspan="5">No students are active right now.</td></tr>`;
+  const adminBody=$("adminActiveStudentsBody");
+  if(adminBody)adminBody.innerHTML=d.length?d.map(u=>`<tr><td style="color:var(--cyan);font-weight:800">${esc(u.nickname||"—")}</td><td>${esc(u.name||"—")}</td><td>${esc(u.school||"—")}</td><td>${esc(u.className||"—")}</td><td>${(u.games||[]).map(g=>`<span class="game-pill">${esc(g)}</span>`).join(" ")}</td><td><span style="color:var(--green);font-weight:800">● ONLINE</span></td></tr>`).join(""):`<tr><td colspan="6">No students are active right now.</td></tr>`;
+}
 function renderPublicReviews(){const d=getReviews();$("publicReviews").innerHTML=d.length?d.reverse().slice(0,9).map(r=>`<div class="review"><div class="stars">${"★".repeat(+r.rating)}${"☆".repeat(5-+r.rating)}</div><div class="review-name">${esc(r.nickname||r.name)}</div><p>${esc(r.text)}</p></div>`).join(""):`<div class="card" style="grid-column:1/-1;text-align:center"><h3>⭐ No reviews yet</h3><p style="margin-top:8px">Register and become one of the first students to review Khali League.</p></div>`}
 
 $("registrationForm").addEventListener("submit",async e=>{
@@ -211,6 +260,8 @@ $("registrationForm").addEventListener("submit",async e=>{
   if(!gamesSelected.length)return showMsg("registrationMessage","Please select at least one game.");
   try{
     const cred=await createUserWithEmailAndPassword(auth,email,password);
+    const profileRef=doc(db,usersPath,cred.user.uid);
+    const enteredReferralCode=($('regReferralCode')?.value||getReferralCodeFromUrl()).trim().toUpperCase();
     const profile={
       name:$("regName").value.trim(),
       schoolId:$("regSchoolId").value.trim(),
@@ -225,13 +276,38 @@ $("registrationForm").addEventListener("submit",async e=>{
       created:Date.now(),
       firstLoginAt:Date.now(),
       welcomePointsAwarded:true,
-      role:"student"
+      role:"student",
+      referralCode:getReferralCodeForUid(cred.user.uid),
+      referralCount:0,
+      referralAwarded:false,
+      referralAwardedByUsers:{}
     };
-    await setDoc(doc(db,usersPath,cred.user.uid),profile);
+    const referralCode=enteredReferralCode;
+    let referrerRef=null;
+    if(referralCode){
+      const q=await getDocs(query(collection(db,usersPath),where("referralCode","==",referralCode)));
+      if(!q.empty && q.docs[0].id!==cred.user.uid)referrerRef=q.docs[0].ref;
+    }
+    await runTransaction(db,async tx=>{
+      if(referrerRef){
+        const rSnap=await tx.get(referrerRef);
+        if(rSnap.exists()){
+          const r=rSnap.data();
+          tx.update(referrerRef,{
+            points:(+r.points||0)+5,
+            referralCount:(+r.referralCount||0)+1,
+            referralAwardedByUsers:{...(r.referralAwardedByUsers||{}),[cred.user.uid]:true}
+          });
+          profile.referredBy=referrerRef.id;
+          profile.referralAwarded=true;
+        }
+      }
+      tx.set(profileRef,profile);
+    });
     const verify=await getDoc(doc(db,usersPath,cred.user.uid));
     if(!verify.exists())throw new Error("The Firebase account was created, but Firestore did not save the student profile. Check your Firestore Rules.");
     currentUser={...profile,id:cred.user.uid};
-    showMsg("registrationMessage","Account created successfully! You received 10 league points. Opening your dashboard...",true);
+    showMsg("registrationMessage",profile.referredBy?"Account created! You received 10 league points. The student whose code you used received +5 referral points.":"Account created successfully! You received 10 league points.",true);
     e.target.reset();
     setTimeout(openStudentDashboard,500);
   }catch(err){
@@ -249,18 +325,31 @@ window.forgotAdminPassword=forgotAdminPassword;
 async function resetStudentPassword(id){if(!isAdminUser)return;const u=usersCache[id];if(!u?.email)return alert("This student does not have an email address on their profile.");if(!confirm(`Send a password reset email to ${u.email}?`))return;try{await sendPasswordResetEmail(auth,u.email);alert(`Password reset email sent to ${u.email}.`)}catch(err){alert("Could not send password reset email: "+friendlyError(err))}}
 window.resetStudentPassword=resetStudentPassword;
 async function studentLogout(){await signOut(auth);currentUser=null;showHome()}async function adminLogout(){await signOut(auth);currentUser=null;isAdminUser=false;showHome()}
-function friendlyError(err){const m={"auth/email-already-in-use":"That email is already registered.","auth/invalid-email":"Enter a valid email address.","auth/weak-password":"Password must be at least 6 characters.","auth/invalid-credential":"Incorrect email or password. Check the email and password, and make sure Email/Password sign-in is enabled in Firebase.","auth/user-not-found":"No Firebase Authentication account exists for this email.","auth/wrong-password":"Incorrect email or password.","auth/too-many-requests":"Too many attempts. Wait a few minutes and try again.","auth/network-request-failed":"Network error. Check your internet connection.","auth/operation-not-allowed":"Email/Password sign-in is not enabled in Firebase Authentication.","auth/requires-recent-login":"Please log in again before changing this account information."};return m[err.code]||err.message||"Something went wrong."}
+function friendlyError(err){const m={"auth/email-already-in-use":"That email is already registered.","auth/invalid-email":"Enter a valid email address.","auth/weak-password":"Password must be at least 6 characters.","auth/invalid-credential":"Incorrect email or password. Check the email and password, and make sure Email/Password sign-in is enabled in Firebase.","auth/user-not-found":"No Firebase Authentication account exists for this email.","auth/wrong-password":"Incorrect email or password.","auth/too-many-requests":"Too many attempts. Wait a few minutes and try again.","auth/network-request-failed":"Network error. Check your internet connection.","auth/operation-not-allowed":"Email/Password sign-in is not enabled in Firebase Authentication.","auth/requires-recent-login":"Please log in again before changing this account information.","auth/popup-closed-by-user":"The Outlook sign-in window was closed.","auth/account-exists-with-different-credential":"This email is already registered with another sign-in method. Use the existing login method first."};return m[err.code]||err.message||"Something went wrong."}
 function openEditProfile(){const u=currentUser;if(!u)return;$("editName").value=u.name;$("editNickname").value=u.nickname;$("editSchool").value=u.school;$("editEmail").value=u.email;fillClasses("editClass",u.className);renderGameCheckboxes("editGames","edit",u.games||[]);$("editProfileModal").classList.remove("hidden")}
 $("editProfileForm").addEventListener("submit",async e=>{e.preventDefault();if(!currentUser)return;const selected=[...document.querySelectorAll("#editGames input:checked")].map(x=>x.value);if(!selected.length)return showMsg("editMessage","Select at least one game.");const newEmail=$("editEmail").value.trim().toLowerCase();try{if(newEmail!==currentUser.email){await updateEmail(auth.currentUser,newEmail)}const data={...currentUser,name:$("editName").value.trim(),nickname:$("editNickname").value.trim(),school:$("editSchool").value.trim(),className:$("editClass").value,email:newEmail,games:selected};delete data.id;await updateDoc(doc(db,usersPath,currentUser.id),data);showMsg("editMessage","Profile updated successfully.",true);setTimeout(closeModals,500)}catch(err){showMsg("editMessage",err.message)}});
-function renderAdmin(){renderAdminStats();populateAdminFilters();renderAdminStudents();renderAdminFixtures();renderAdminAnnouncements();renderAdminReviews();renderAdminSuggestions();updateAdminLiveUI()}
-function renderAdminStats(){const u=getUsers(),schools=[...new Set(u.map(x=>x.school).filter(Boolean))];$("adminStudents").textContent=u.length;$("adminSchools").textContent=schools.length;$("adminGames").textContent=games.length;$("adminPoints").textContent=u.reduce((s,x)=>s+(+x.points||0),0);$("adminReviews").textContent=getReviews().length;$("adminSuggestions").textContent=getSuggestions().length}
+function renderAdmin(){renderAdminStats();populateAdminFilters();renderAdminStudents();renderActiveStudents();renderAdminFixtures();renderAdminAnnouncements();renderAdminReviews();updateAdminLiveUI()}
+function renderAdminStats(){const u=getUsers(),schools=[...new Set(u.map(x=>x.school).filter(Boolean))];$("adminStudents").textContent=u.length;$("adminSchools").textContent=schools.length;$("adminGames").textContent=games.length;$("adminPoints").textContent=u.reduce((s,x)=>s+(+x.points||0),0);$("adminReviews").textContent=getReviews().length}
 function populateAdminFilters(){const u=getUsers(),sf=$("schoolFilter"),gf=$("gameFilter"),cf=$("classFilter"),sv=sf.value,gv=gf.value,cv=cf.value;sf.innerHTML=`<option value="">All Schools</option>`+[...new Set(u.map(x=>x.school).filter(Boolean))].sort().map(x=>`<option>${esc(x)}</option>`).join("");gf.innerHTML=`<option value="">All Games</option>`+games.map(x=>`<option>${esc(x.name)}</option>`).join("");cf.innerHTML=`<option value="">All Classes</option>`+[...new Set(u.map(x=>x.className).filter(Boolean))].sort().map(x=>`<option>${esc(x)}</option>`).join("");sf.value=sv;gf.value=gv;cf.value=cv;$("fixtureGame").innerHTML=games.map(x=>`<option>${esc(x.name)}</option>`).join("")}
-function renderAdminStudents(){const search=$("studentSearch").value.trim().toLowerCase(),school=$("schoolFilter").value,game=$("gameFilter").value,cls=$("classFilter").value;const d=getUsers().filter(u=>{const t=[u.name,u.schoolId,u.nickname,u.school,u.className,u.email].join(" ").toLowerCase();return(!search||t.includes(search))&&(!school||u.school===school)&&(!game||(u.games||[]).includes(game))&&(!cls||u.className===cls)});$("adminStudentsBody").innerHTML=d.length?d.map(u=>`<tr><td><strong>${esc(u.name)}</strong></td><td>${esc(u.schoolId)}</td><td style="color:var(--cyan)">${esc(u.nickname)}</td><td>${esc(u.school)}</td><td>${esc(u.className)}</td><td>${(u.games||[]).map(g=>`<span class="game-pill">${esc(g)}</span>`).join(" ")}</td><td><strong style="color:var(--yellow)">${u.points||0}</strong></td><td><div class="action-row"><button class="small-btn" onclick="editStudent('${u.id}')">EDIT</button><button class="small-btn" onclick="addStudentPoints('${u.id}',10)">+10</button><button class="small-btn" onclick="addStudentPoints('${u.id}',-10)">-10</button><button class="small-btn" onclick="addStudentPoints('${u.id}',1)">+1</button><button class="small-btn" onclick="addStudentPoints('${u.id}',-1)">-1</button><button class="small-btn" onclick="resetStudentPassword('${u.id}')">RESET PW</button><button class="small-btn" onclick="deleteStudent('${u.id}')">DELETE</button></div></td></tr>`).join(""):`<tr><td colspan="8">No students found.</td></tr>`}
-window.addStudentPoints=async(id,amount)=>{const u=usersCache[id];if(!u)return;await updateDoc(doc(db,usersPath,id),{points:Math.max(0,(+u.points||0)+Number(amount))})};window.deleteStudent=async id=>{const u=usersCache[id];if(u&&confirm(`Delete ${u.name} (${u.nickname}) from Khali League?`)){await deleteDoc(doc(db,usersPath,id));if(currentUser?.id===id)await signOut(auth)}};
+function renderAdminStudents(){const search=$("studentSearch").value.trim().toLowerCase(),school=$("schoolFilter").value,game=$("gameFilter").value,cls=$("classFilter").value;const d=getUsers().filter(u=>{const t=[u.name,u.schoolId,u.nickname,u.school,u.className,u.email].join(" ").toLowerCase();return(!search||t.includes(search))&&(!school||u.school===school)&&(!game||(u.games||[]).includes(game))&&(!cls||u.className===cls)});$("adminStudentsBody").innerHTML=d.length?d.map(u=>`<tr><td><strong>${esc(u.name)}</strong></td><td>${esc(u.schoolId)}</td><td style="color:var(--cyan)">${esc(u.nickname)}</td><td>${esc(u.school)}</td><td>${esc(u.className)}</td><td>${(u.games||[]).map(g=>`<span class="game-pill">${esc(g)}</span>`).join(" ")}</td><td><strong style="color:var(--yellow)">${u.points||0}</strong></td><td><div class="action-row"><button class="small-btn" onclick="editStudent('${u.id}')">EDIT</button><button class="small-btn" onclick="addStudentPoints('${u.id}',10)">+10</button><button class="small-btn" onclick="addStudentPoints('${u.id}',-10)">-10</button><button class="small-btn" onclick="addStudentPoints('${u.id}',1)">+1</button><button class="small-btn" onclick="addStudentPoints('${u.id}',-1)">-1</button><button class="small-btn" onclick="setStudentPoints('${u.id}')">SET POINTS</button><button class="small-btn" onclick="resetStudentPassword('${u.id}')">RESET PW</button><button class="small-btn" onclick="deleteStudent('${u.id}')">DELETE</button></div></td></tr>`).join(""):`<tr><td colspan="8">No students found.</td></tr>`}
+window.addStudentPoints=async(id,amount)=>{
+  if(!isAdminUser)return;
+  const u=usersCache[id];if(!u)return;
+  await updateDoc(doc(db,usersPath,id),{points:Math.max(0,(+u.points||0)+Number(amount))});
+};
+window.setStudentPoints=async id=>{
+  if(!isAdminUser)return;
+  const u=usersCache[id];if(!u)return;
+  const value=prompt(`Set points for ${u.name||u.nickname}:`,String(u.points||0));
+  if(value===null)return;
+  const points=Math.max(0,Math.floor(Number(value)));
+  if(!Number.isFinite(points))return alert("Enter a valid non-negative number.");
+  await updateDoc(doc(db,usersPath,id),{points});
+};window.deleteStudent=async id=>{const u=usersCache[id];if(u&&confirm(`Delete ${u.name} (${u.nickname}) from Khali League?`)){await deleteDoc(doc(db,usersPath,id));if(currentUser?.id===id)await signOut(auth)}};
 window.editStudent=id=>{const u=usersCache[id];if(!u)return;$("adminEditOriginalUid").value=id;$("adminEditName").value=u.name;$("adminEditSchoolId").value=u.schoolId;$("adminEditNickname").value=u.nickname;$("adminEditSchool").value=u.school;fillClasses("adminEditClass",u.className);$("adminEditGender").value=u.gender;$("adminEditEmail").value=u.email;$("adminEditPoints").value=u.points||0;renderGameCheckboxes("adminEditGames","adminEdit",u.games||[]);$("adminEditModal").classList.remove("hidden")};
 $("adminEditForm").addEventListener("submit",async e=>{e.preventDefault();const id=$("adminEditOriginalUid").value,u=usersCache[id];if(!u)return;const gamesSelected=[...document.querySelectorAll("#adminEditGames input:checked")].map(x=>x.value);if(!gamesSelected.length)return showMsg("adminEditMessage","Select at least one game.");const data={name:$("adminEditName").value.trim(),schoolId:$("adminEditSchoolId").value.trim(),nickname:$("adminEditNickname").value.trim(),school:$("adminEditSchool").value.trim(),className:$("adminEditClass").value,gender:$("adminEditGender").value,email:$("adminEditEmail").value.trim().toLowerCase(),points:+$("adminEditPoints").value||0,games:gamesSelected};try{await updateDoc(doc(db,usersPath,id),data);showMsg("adminEditMessage","Student updated successfully.",true);setTimeout(closeModals,500)}catch(err){showMsg("adminEditMessage",err.message)}});
 $("fixtureForm").addEventListener("submit",async e=>{e.preventDefault();const x={game:$("fixtureGame").value,date:$("fixtureDate").value,time:$("fixtureTime").value,playerA:$("fixtureA").value.trim(),playerB:$("fixtureB").value.trim(),venue:$("fixtureVenue").value.trim(),note:$("fixtureNote").value.trim(),created:Date.now()};await addDoc(collection(db,fixturesPath),x);e.target.reset();alert("Fixture created successfully.")});function renderAdminFixtures(){const d=getFixtures().reverse();$("adminFixtures").innerHTML=d.length?d.map(f=>`<div class="fixture"><div class="fixture-top"><span>${esc(f.game)}</span><span>${esc(f.date)} ${esc(f.time)}</span></div><div class="fixture-match">${esc(f.playerA)} VS ${esc(f.playerB)}</div><div class="fixture-meta">${esc(f.venue||"Venue TBA")}</div><br><button class="small-btn" onclick="deleteFixture('${f.id}')">DELETE</button></div>`).join(""):`<p style="color:var(--muted)">No fixtures created yet.</p>`}window.deleteFixture=async id=>{if(confirm("Delete this fixture?"))await deleteDoc(doc(db,fixturesPath,id))};
-$("announcementForm").addEventListener("submit",async e=>{e.preventDefault();await addDoc(collection(db,announcementsPath),{title:$("announcementTitle").value.trim(),message:$("announcementMessage").value.trim(),date:Date.now()});e.target.reset();alert("Announcement posted.")});function renderAdminAnnouncements(){const d=getAnnouncements().reverse();$("adminAnnouncements").innerHTML=d.length?d.map(x=>`<div class="announcement"><h4>${esc(x.title)}</h4><p>${esc(x.message)}</p><br><button class="small-btn" onclick="deleteAnnouncement('${x.id}')">DELETE</button></div>`).join(""):`<p style="color:var(--muted)">No announcements yet.</p>`}window.deleteAnnouncement=async id=>{if(confirm("Delete this announcement?"))await deleteDoc(doc(db,announcementsPath,id))};
+$("announcementForm").addEventListener("submit",async e=>{e.preventDefault();await addDoc(collection(db,announcementsPath),{title:$("announcementTitle").value.trim(),message:$("announcementMessage").value.trim(),link:$("announcementLink")?.value.trim()||"",date:Date.now()});e.target.reset();alert("Announcement posted.")});function renderAdminAnnouncements(){const d=getAnnouncements().sort((a,b)=>(b.date||0)-(a.date||0));$("adminAnnouncements").innerHTML=d.length?d.map(x=>`<div class="announcement"><h4>${esc(x.title)}</h4><p>${esc(x.message)}</p>${safeUrl(x.link)?`<p style="margin-top:7px"><a href="${esc(safeUrl(x.link))}" target="_blank" rel="noopener noreferrer">${esc(x.link)}</a></p>`:""}<br><button class="small-btn" onclick="deleteAnnouncement('${esc(x.id)}')">DELETE</button></div>`).join(""):`<p style="color:var(--muted)">No announcements yet.</p>`}window.deleteAnnouncement=async id=>{if(confirm("Delete this announcement?"))await deleteDoc(doc(db,announcementsPath,id))};
 async function submitStudentReview(){const u=currentUser;if(!u)return showMsg("reviewMessage","You must be logged in to leave a review.");const text=$("studentReview").value.trim();if(!text)return showMsg("reviewMessage","Please write a review.");await addDoc(collection(db,reviewsPath),{userId:u.id,name:u.name,nickname:u.nickname,rating:+$("studentRating").value,text,date:Date.now()});$("studentReview").value="";showMsg("reviewMessage","Your review has been submitted.",true)}window.submitStudentReview=submitStudentReview;function renderAdminReviews(){const d=getReviews().reverse();$("adminReviewsList").innerHTML=d.length?d.map(r=>`<div class="review" style="margin-bottom:10px"><div class="stars">${"★".repeat(+r.rating)}${"☆".repeat(5-+r.rating)}</div><div class="review-name">${esc(r.nickname||r.name)}</div><p>${esc(r.text)}</p><br><button class="small-btn" onclick="deleteReview('${r.id}')">DELETE REVIEW</button></div>`).join(""):`<p style="color:var(--muted)">No reviews yet.</p>`}window.deleteReview=async id=>{if(confirm("Delete this review?"))await deleteDoc(doc(db,reviewsPath,id))};
 async function submitSuggestion(){const u=currentUser;if(!u)return showMsg("suggestionMessage","You must be logged in.");const text=$("studentSuggestion").value.trim();if(!text)return showMsg("suggestionMessage","Write your suggestion first.");await addDoc(collection(db,suggestionsPath),{userId:u.id,name:u.name,nickname:u.nickname,category:$("suggestionCategory").value,text,date:Date.now()});$("studentSuggestion").value="";showMsg("suggestionMessage","Suggestion sent to the admin.",true)}window.submitSuggestion=submitSuggestion;function renderAdminSuggestions(){const d=getSuggestions().reverse();$("adminSuggestionsList").innerHTML=d.length?d.map(x=>`<div class="review" style="margin-bottom:10px"><div class="review-name">${esc(x.nickname||x.name)}</div><div style="color:var(--cyan);font-size:11px;margin-bottom:8px">${esc(x.category)}</div><p>${esc(x.text)}</p><br><button class="small-btn" onclick="deleteSuggestion('${x.id}')">DELETE</button></div>`).join(""):`<p style="color:var(--muted)">No suggestions yet.</p>`}window.deleteSuggestion=async id=>{if(confirm("Delete this suggestion?"))await deleteDoc(doc(db,suggestionsPath,id))};
 
@@ -328,74 +417,560 @@ async function uploadStudentMaterial(){
   try{await uploadMaterial(f,$("studentUploadTitle").value,$("studentUploadDescription").value,$("studentUploadCategory").value,"admin","studentMaterialMessage","studentUploadProgress");$("studentUploadTitle").value="";$("studentUploadDescription").value="";$("studentMaterialFile").value="";showMsg("studentMaterialMessage","File uploaded. The admin can now review it.",true)}catch(e){console.error(e);showMsg("studentMaterialMessage",e.message||"Upload failed.")}}
 window.uploadStudentMaterial=uploadStudentMaterial;
 window.deleteMaterial=async id=>{if(!isAdminUser||!confirm("Delete this material?"))return;try{const x=materialsCache[id];if(x?.storagePath)await deleteObject(ref(storage,x.storagePath)).catch(()=>{});await deleteDoc(doc(db,materialsPath,id))}catch(e){alert(e.message||"Could not delete material.")}};
-function portalGo(id){const el=$(id);if(el)el.scrollIntoView({behavior:"smooth",block:"start"})}
+function portalGo(id){const el=$(id);if(!el)return;document.querySelectorAll(".portal-menu button").forEach(b=>b.classList.remove("active"));const btn=[...document.querySelectorAll(".portal-menu button")].find(b=>String(b.getAttribute("onclick")||"").includes(`'${id}'`));if(btn)btn.classList.add("active");try{history.replaceState(null,"","#"+id)}catch(e){}window.scrollTo({top:Math.max(0,el.getBoundingClientRect().top+window.scrollY-105),behavior:"smooth"})}
+function restorePortalSection(){
+  const id=(location.hash||"").replace(/^#/,"");
+  const el=id&&$(id);
+  if(el)setTimeout(()=>el.scrollIntoView({behavior:"auto",block:"start"}),50);
+}
 window.portalGo=portalGo;
 
 /* ================= LIVE CLASSROOM =================
    Cloud Firestore stores classroom status, chat and WebRTC signaling.
-   WebRTC carries the actual audio/video/screen media.
+   WebRTC carries teacher/student camera+microphone and teacher screen audio/video.
 ===================================================== */
-const rtcConfig={iceServers:[{urls:"stun:stun.l.google.com:19302"},{urls:"stun:stun1.l.google.com:19302"}]};
+const rtcConfig={iceServers:[
+  {urls:"stun:stun.l.google.com:19302"},
+  {urls:"stun:stun1.l.google.com:19302"}
+]};
 const liveRoot=["liveClass","main"];
 const liveDocRef=()=>doc(db,...liveRoot);
 const liveSubCol=name=>collection(db,...liveRoot,name);
 const liveUserDoc=(name,id)=>doc(db,...liveRoot,name,id);
 const liveUserSubCol=(name,id,sub)=>collection(db,...liveRoot,name,id,sub);
+let studentStream=null;
+let studentChatUnsub=null;
+let teacherParticipantsUnsub=null;
+
 function startLiveListeners(){
   if(!auth.currentUser)return;
   if(liveListenersStarted)return;
   liveListenersStarted=true;
 
   onSnapshot(liveDocRef(),snap=>{
-    const s=snap.exists()?snap.data():null;
-    liveActive=!!s?.active;
+    const st=snap.exists()?snap.data():null;
+    liveActive=!!st?.active;
     updateStudentLiveCard();
     updateAdminLiveUI();
 
     if(!liveActive){
-      if(studentPeer){studentPeer.close();studentPeer=null}
-      if(studentScreenPeer){studentScreenPeer.close();studentScreenPeer=null}
+      studentPeer?.close();studentPeer=null;
+      studentScreenPeer?.close();studentScreenPeer=null;
       teacherPeers.forEach(pc=>pc.close());
       teacherScreenPeers.forEach(pc=>pc.close());
-      teacherPeers.clear();
-      teacherScreenPeers.clear();
+      teacherPeers.clear();teacherScreenPeers.clear();
+      stopLocal(studentStream);studentStream=null;
       if(!isAdminUser){
         $("studentLiveRoom")?.classList.add("hidden");
         $("joinLiveBtn")?.classList.remove("hidden");
       }
+      if(isAdminUser)clearTeacherStudentVideos();
     }
   },err=>console.error("Live status listener:",err));
 
   onSnapshot(query(liveSubCol("chat"),orderBy("at","asc")),snap=>{
     const box=$("adminChatMessages"),box2=$("studentChatMessages");
-    if(box)box.innerHTML="";
-    if(box2)box2.innerHTML="";
+    if(box)box.innerHTML=""; if(box2)box2.innerHTML="";
     snap.forEach(d=>appendChat(d.data()));
   },err=>console.error("Live chat listener:",err));
 
   if(isAdminUser)listenTeacherOffers();
 }
-function updateStudentLiveCard(){const c=$("studentLiveCard");const side=$("sideLiveText");if(!currentUser||isAdminUser||!liveActive){c.classList.add("hidden");if(side)side.textContent="Teacher is currently offline.";return}c.classList.remove("hidden");$("studentLiveStatus").textContent="🟢 TEACHER IS LIVE";if(side)side.textContent="Teacher is live now. Join the classroom.";renderStudentMaterials()}
-function updateAdminLiveUI(){const b=$("adminLiveStatus");if(b)b.textContent=liveActive?"🔴 LIVE CLASS ACTIVE":"⚫ CLASS OFFLINE"}
-async function startLiveClass(){if(!isAdminUser)return;try{teacherStream=await navigator.mediaDevices.getUserMedia({video:true,audio:true});$("adminTeacherVideo").srcObject=teacherStream;await setDoc(liveDocRef(),{active:true,teacherUid:auth.currentUser.uid,teacherName:"Khali League Teacher",startedAt:serverTimestamp()});$("adminLiveRoom").classList.remove("hidden");updateAdminLiveUI();listenTeacherOffers()}catch(e){alert("Camera/microphone permission was not granted: "+e.message)}}window.startLiveClass=startLiveClass;
-let teacherOffersUnsub=null;
-function listenTeacherOffers(){if(teacherOffersUnsub||!isAdminUser||!auth.currentUser)return;teacherOffersUnsub=onSnapshot(liveSubCol("offers"),async snap=>{for(const d of snap.docs){const studentId=d.id,offer=d.data()?.offer;if(!offer||teacherPeers.has(studentId)||!teacherStream)continue;const pc=new RTCPeerConnection(rtcConfig);teacherPeers.set(studentId,pc);teacherStream.getTracks().forEach(t=>pc.addTrack(t,teacherStream));pc.onicecandidate=e=>{if(e.candidate)addDoc(liveUserSubCol("candidates",studentId,"teacher"),e.candidate.toJSON())};pc.onconnectionstatechange=()=>{if(["failed","closed","disconnected"].includes(pc.connectionState)){pc.close();teacherPeers.delete(studentId)}};await pc.setRemoteDescription(offer);const answer=await pc.createAnswer();await pc.setLocalDescription(answer);await setDoc(liveUserDoc("answers",studentId),{answer:{type:answer.type,sdp:answer.sdp}});onSnapshot(liveUserSubCol("candidates",studentId,"student"),cs=>cs.docChanges().forEach(ch=>{if(ch.type==="added")pc.addIceCandidate(ch.doc.data()).catch(()=>{})}));if(teacherScreenStream)createTeacherScreenPeer(studentId)}});onSnapshot(liveSubCol("participants"),snap=>{const list=snap.docs.map(d=>d.data());$("onlineStudentCount").textContent=list.length;$("onlineStudentList").innerHTML=list.map(x=>`<div class="online-user">🟢 ${esc(x.name||"Student")}</div>`).join("")})}
-async function createTeacherScreenPeer(studentId){if(!teacherScreenStream||teacherScreenPeers.has(studentId))return;const pc=new RTCPeerConnection(rtcConfig);teacherScreenPeers.set(studentId,pc);teacherScreenStream.getTracks().forEach(t=>pc.addTrack(t,teacherScreenStream));pc.onicecandidate=e=>{if(e.candidate)addDoc(liveUserSubCol("screenCandidates",studentId,"teacher"),e.candidate.toJSON())};pc.onconnectionstatechange=()=>{if(["failed","closed","disconnected"].includes(pc.connectionState)){pc.close();teacherScreenPeers.delete(studentId)}};const offer=await pc.createOffer();await pc.setLocalDescription(offer);await setDoc(liveUserDoc("screenOffers",studentId),{offer:{type:offer.type,sdp:offer.sdp}});onSnapshot(liveUserDoc("screenAnswers",studentId),async snap=>{const a=snap.data()?.answer;if(a&&!pc.currentRemoteDescription)await pc.setRemoteDescription(a)});onSnapshot(liveUserSubCol("screenCandidates",studentId,"student"),snap=>snap.docChanges().forEach(ch=>{if(ch.type==="added")pc.addIceCandidate(ch.doc.data()).catch(()=>{})}))}
-async function studentJoinLive(){if(!currentUser||!liveActive)return;try{studentPeer=new RTCPeerConnection(rtcConfig);studentPeer.ontrack=e=>{const stream=e.streams[0];if(e.track.kind==="video"){if(!$("studentTeacherVideo").srcObject)$("studentTeacherVideo").srcObject=stream||new MediaStream([e.track]);else $("studentScreenVideo").srcObject=stream||new MediaStream([e.track])}else if(e.track.kind==="audio"&&stream){$("studentTeacherVideo").srcObject=stream}};studentPeer.onicecandidate=e=>{if(e.candidate)addDoc(liveUserSubCol("candidates",auth.currentUser.uid,"student"),e.candidate.toJSON())};const offer=await studentPeer.createOffer({offerToReceiveAudio:true,offerToReceiveVideo:true});await studentPeer.setLocalDescription(offer);await setDoc(liveUserDoc("offers",auth.currentUser.uid),{offer:{type:offer.type,sdp:offer.sdp},name:currentUser.nickname||currentUser.name});await setDoc(liveUserDoc("participants",auth.currentUser.uid),{name:currentUser.nickname||currentUser.name,joinedAt:serverTimestamp()});onSnapshot(liveUserDoc("answers",auth.currentUser.uid),async snap=>{const a=snap.data()?.answer;if(a&&studentPeer&&!studentPeer.currentRemoteDescription)await studentPeer.setRemoteDescription(a)});onSnapshot(liveUserSubCol("candidates",auth.currentUser.uid,"teacher"),snap=>snap.docChanges().forEach(ch=>{if(ch.type==="added")studentPeer?.addIceCandidate(ch.doc.data()).catch(()=>{})}));onSnapshot(liveUserDoc("screenOffers",auth.currentUser.uid),async snap=>{const o=snap.data()?.offer;if(!o||studentScreenPeer?.currentRemoteDescription)return;studentScreenPeer=new RTCPeerConnection(rtcConfig);studentScreenPeer.ontrack=e=>{if(e.track.kind==="video")$("studentScreenVideo").srcObject=e.streams[0]||new MediaStream([e.track])};studentScreenPeer.onicecandidate=e=>{if(e.candidate)addDoc(liveUserSubCol("screenCandidates",auth.currentUser.uid,"student"),e.candidate.toJSON())};await studentScreenPeer.setRemoteDescription(o);const a=await studentScreenPeer.createAnswer();await studentScreenPeer.setLocalDescription(a);await setDoc(liveUserDoc("screenAnswers",auth.currentUser.uid),{answer:{type:a.type,sdp:a.sdp}});onSnapshot(liveUserSubCol("screenCandidates",auth.currentUser.uid,"teacher"),snap=>snap.docChanges().forEach(ch=>{if(ch.type==="added")studentScreenPeer?.addIceCandidate(ch.doc.data()).catch(()=>{})}))});$("studentLiveRoom").classList.remove("hidden");$("joinLiveBtn").classList.add("hidden");loadChat();}catch(e){alert("Could not join live class: "+e.message)}}window.studentJoinLive=studentJoinLive;
-async function leaveLiveClass(){if(currentUser){await deleteDoc(liveUserDoc("participants",currentUser.id)).catch(()=>{});await deleteDoc(liveUserDoc("offers",currentUser.id)).catch(()=>{});await deleteDoc(liveUserDoc("answers",currentUser.id)).catch(()=>{});studentPeer?.close();studentScreenPeer?.close();studentPeer=null;studentScreenPeer=null;await deleteDoc(liveUserDoc("screenOffers",currentUser.id)).catch(()=>{});await deleteDoc(liveUserDoc("screenAnswers",currentUser.id)).catch(()=>{});$("studentLiveRoom").classList.add("hidden");$("joinLiveBtn").classList.remove("hidden")}}
-async function endLiveClass(){if(!isAdminUser)return;if(!confirm("End the live class for all students?"))return;await setDoc(liveDocRef(),{active:false,endedAt:serverTimestamp()},{merge:true});await deleteAllDocsAtPath(["liveClass","main","offers"]);await deleteAllDocsAtPath(["liveClass","main","answers"]);await deleteAllDocsAtPath(["liveClass","main","participants"]);for(const pc of teacherPeers.values())pc.close();for(const pc of teacherScreenPeers.values())pc.close();teacherPeers.clear();teacherScreenPeers.clear();stopLocal(teacherStream);stopLocal(teacherScreenStream);teacherStream=null;teacherScreenStream=null;$("adminTeacherVideo").srcObject=null;$("adminScreenVideo").srcObject=null}window.endLiveClass=endLiveClass;
-async function shareTeacherScreen(){if(!teacherStream)return alert("Start the live class first.");try{teacherScreenStream=await navigator.mediaDevices.getDisplayMedia({video:true});$("adminScreenVideo").srcObject=teacherScreenStream;for(const studentId of teacherPeers.keys())await createTeacherScreenPeer(studentId);const track=teacherScreenStream.getVideoTracks()[0];track.onended=()=>{stopLocal(teacherScreenStream);teacherScreenStream=null;$("adminScreenVideo").srcObject=null};$("shareScreenBtn").textContent="🖥️ SCREEN SHARING"}catch(e){console.warn(e)}}window.shareTeacherScreen=shareTeacherScreen;
-function toggleTeacherMic(){if(!teacherStream)return;const t=teacherStream.getAudioTracks()[0];t.enabled=!t.enabled;$("teacherMicBtn").textContent=t.enabled?"🎙️ MUTE MIC":"🔇 UNMUTE MIC"}window.toggleTeacherMic=toggleTeacherMic;function stopLocal(s){s?.getTracks().forEach(t=>t.stop())}
-function appendChat(m){if(!m)return;const box=$("adminChatMessages"),box2=$("studentChatMessages"),html=`<div class="chat-msg"><strong>${esc(m.name||"User")}</strong><p>${esc(m.text)}</p></div>`;if(box)box.insertAdjacentHTML("beforeend",html);if(box2)box2.insertAdjacentHTML("beforeend",html);box?.lastElementChild?.scrollIntoView();box2?.lastElementChild?.scrollIntoView()}
-async function sendLiveChat(who){const input=who==="admin"?$("adminChatInput"):$("studentChatInput"),text=input.value.trim();if(!text||!auth.currentUser)return;await addDoc(liveSubCol("chat"),{uid:auth.currentUser.uid,name:isAdminUser?"Teacher":(currentUser?.nickname||currentUser?.name||"Student"),text,at:serverTimestamp()});input.value=""}window.sendLiveChat=sendLiveChat;function loadChat(){onSnapshot(query(liveSubCol("chat"),orderBy("at","asc")),snap=>{const box=$("studentChatMessages");if(!box)return;box.innerHTML="";snap.forEach(d=>appendChat(d.data()))})}
 
+function updateStudentLiveCard(){
+  const c=$("studentLiveCard"),side=$("sideLiveText");
+  if(!currentUser||isAdminUser||!liveActive){
+    c?.classList.add("hidden");
+    if(side)side.textContent="Teacher is currently offline.";
+    return;
+  }
+  c?.classList.remove("hidden");
+  if($("studentLiveStatus"))$("studentLiveStatus").textContent="🟢 TEACHER IS LIVE";
+  if(side)side.textContent="Teacher is live now. Join the classroom.";
+  renderStudentMaterials();
+}
+
+function updateAdminLiveUI(){
+  const b=$("adminLiveStatus"),start=$("startLiveBtn"),end=$("endLiveBtn");
+  if(b)b.textContent=liveActive?"🔴 LIVE CLASS ACTIVE":"⚫ CLASS OFFLINE";
+  if(start)start.classList.toggle("hidden",liveActive);
+  if(end)end.classList.toggle("hidden",!liveActive);
+}
+
+async function startLiveClass(){
+  if(!isAdminUser)return;
+  try{
+    if(teacherStream)return;
+    teacherStream=await navigator.mediaDevices.getUserMedia({video:true,audio:true});
+    $("adminTeacherVideo").srcObject=teacherStream;
+    await setDoc(liveDocRef(),{
+      active:true,teacherUid:auth.currentUser.uid,
+      teacherName:"Khali League Teacher",startedAt:serverTimestamp()
+    },{merge:true});
+    $("adminLiveRoom").classList.remove("hidden");
+    updateAdminLiveUI();
+    listenTeacherOffers();
+  }catch(e){
+    alert("Camera/microphone permission was not granted: "+e.message);
+  }
+}
+window.startLiveClass=startLiveClass;
+
+let teacherOffersUnsub=null;
+function listenTeacherOffers(){
+  if(teacherOffersUnsub||!isAdminUser||!auth.currentUser)return;
+  teacherOffersUnsub=onSnapshot(liveSubCol("offers"),async snap=>{
+    for(const d of snap.docs){
+      const studentId=d.id,offer=d.data()?.offer;
+      if(!offer||teacherPeers.has(studentId)||!teacherStream)continue;
+
+      const pc=new RTCPeerConnection(rtcConfig);
+      teacherPeers.set(studentId,pc);
+
+      // Send teacher camera + microphone to this student.
+      teacherStream.getTracks().forEach(t=>pc.addTrack(t,teacherStream));
+
+      // Receive student's camera + microphone.
+      pc.ontrack=e=>{
+        const stream=e.streams[0]||new MediaStream([e.track]);
+        renderTeacherStudentMedia(studentId,stream,d.data()?.name||"Student");
+      };
+
+      pc.onicecandidate=e=>{
+        if(e.candidate)addDoc(
+          liveUserSubCol("candidates",studentId,"teacher"),
+          e.candidate.toJSON()
+        );
+      };
+
+      pc.onconnectionstatechange=()=>{
+        if(["failed","closed","disconnected"].includes(pc.connectionState)){
+          removeTeacherStudentMedia(studentId);
+          pc.close();teacherPeers.delete(studentId);
+          teacherScreenPeers.get(studentId)?.close();
+          teacherScreenPeers.delete(studentId);
+        }
+      };
+
+      await pc.setRemoteDescription(offer);
+      const answer=await pc.createAnswer();
+      await pc.setLocalDescription(answer);
+      await setDoc(liveUserDoc("answers",studentId),{
+        answer:{type:answer.type,sdp:answer.sdp}
+      });
+
+      onSnapshot(liveUserSubCol("candidates",studentId,"student"),cs=>{
+        cs.docChanges().forEach(ch=>{
+          if(ch.type==="added")pc.addIceCandidate(ch.doc.data()).catch(()=>{});
+        });
+      });
+
+      if(teacherScreenStream)createTeacherScreenPeer(studentId);
+    }
+  });
+
+  teacherParticipantsUnsub=onSnapshot(liveSubCol("participants"),snap=>{
+    const list=snap.docs.map(d=>({id:d.id,...d.data()}));
+    if($("onlineStudentCount"))$("onlineStudentCount").textContent=list.length;
+    if($("onlineStudentList"))$("onlineStudentList").innerHTML=list.map(x=>
+      `<div class="online-user">🟢 ${esc(x.name||"Student")}</div>`
+    ).join("");
+  });
+}
+
+function renderTeacherStudentMedia(studentId,stream,name){
+  const box=$("teacherStudentVideos");
+  if(!box)return;
+  let wrap=document.getElementById("teacherStudent_"+studentId);
+  if(!wrap){
+    wrap=document.createElement("div");
+    wrap.id="teacherStudent_"+studentId;
+    wrap.className="video-box";
+    wrap.style.minWidth="220px";
+    wrap.innerHTML=`<video autoplay playsinline></video><div class="video-label">${esc(name||"Student")}</div>`;
+    box.appendChild(wrap);
+  }
+  const video=wrap.querySelector("video");
+  if(video && video.srcObject!==stream)video.srcObject=stream;
+  video?.play?.().catch(()=>{});
+}
+
+function removeTeacherStudentMedia(studentId){
+  document.getElementById("teacherStudent_"+studentId)?.remove();
+}
+function clearTeacherStudentVideos(){
+  const box=$("teacherStudentVideos");
+  if(box)box.innerHTML="";
+}
+async function createTeacherScreenPeer(studentId){
+  if(!teacherScreenStream||teacherScreenPeers.has(studentId))return;
+  const pc=new RTCPeerConnection(rtcConfig);
+  teacherScreenPeers.set(studentId,pc);
+  teacherScreenStream.getTracks().forEach(t=>pc.addTrack(t,teacherScreenStream));
+  pc.onicecandidate=e=>{
+    if(e.candidate)addDoc(
+      liveUserSubCol("screenCandidates",studentId,"teacher"),
+      e.candidate.toJSON()
+    );
+  };
+  pc.onconnectionstatechange=()=>{
+    if(["failed","closed","disconnected"].includes(pc.connectionState)){
+      pc.close();teacherScreenPeers.delete(studentId);
+    }
+  };
+  const offer=await pc.createOffer();
+  await pc.setLocalDescription(offer);
+  await setDoc(liveUserDoc("screenOffers",studentId),{
+    offer:{type:offer.type,sdp:offer.sdp}
+  });
+  onSnapshot(liveUserDoc("screenAnswers",studentId),async snap=>{
+    const a=snap.data()?.answer;
+    if(a&&!pc.currentRemoteDescription)await pc.setRemoteDescription(a);
+  });
+  onSnapshot(liveUserSubCol("screenCandidates",studentId,"student"),snap=>{
+    snap.docChanges().forEach(ch=>{
+      if(ch.type==="added")pc.addIceCandidate(ch.doc.data()).catch(()=>{});
+    });
+  });
+}
+
+async function studentJoinLive(){
+  if(!currentUser||!liveActive)return;
+  try{
+    if(studentPeer)return;
+
+    // Ask for student camera/microphone. If denied, the student can still receive the class.
+    try{
+      studentStream=await navigator.mediaDevices.getUserMedia({video:true,audio:true});
+    }catch(mediaErr){
+      console.warn("Student camera/microphone unavailable:",mediaErr);
+      studentStream=null;
+    }
+
+    studentPeer=new RTCPeerConnection(rtcConfig);
+
+    // Teacher camera + microphone arrive here.
+    studentPeer.ontrack=e=>{
+      const stream=e.streams[0]||new MediaStream([e.track]);
+      const video=$("studentTeacherVideo");
+      if(video)video.srcObject=stream;
+      video?.play?.().catch(()=>{});
+    };
+
+    studentPeer.onicecandidate=e=>{
+      if(e.candidate)addDoc(
+        liveUserSubCol("candidates",auth.currentUser.uid,"student"),
+        e.candidate.toJSON()
+      );
+    };
+
+    // Send student camera + microphone to teacher.
+    if(studentStream){
+      studentStream.getTracks().forEach(t=>studentPeer.addTrack(t,studentStream));
+    }
+
+    const offer=await studentPeer.createOffer({
+      offerToReceiveAudio:true,
+      offerToReceiveVideo:true
+    });
+    await studentPeer.setLocalDescription(offer);
+
+    await setDoc(liveUserDoc("offers",auth.currentUser.uid),{
+      offer:{type:offer.type,sdp:offer.sdp},
+      name:currentUser.nickname||currentUser.name||"Student"
+    });
+
+    await setDoc(liveUserDoc("participants",auth.currentUser.uid),{
+      name:currentUser.nickname||currentUser.name||"Student",
+      joinedAt:serverTimestamp()
+    });
+
+    onSnapshot(liveUserDoc("answers",auth.currentUser.uid),async snap=>{
+      const a=snap.data()?.answer;
+      if(a&&studentPeer&&!studentPeer.currentRemoteDescription)
+        await studentPeer.setRemoteDescription(a);
+    });
+
+    onSnapshot(liveUserSubCol("candidates",auth.currentUser.uid,"teacher"),snap=>{
+      snap.docChanges().forEach(ch=>{
+        if(ch.type==="added")studentPeer?.addIceCandidate(ch.doc.data()).catch(()=>{});
+      });
+    });
+
+    // Teacher screen + system/video audio.
+    onSnapshot(liveUserDoc("screenOffers",auth.currentUser.uid),async snap=>{
+      const o=snap.data()?.offer;
+      if(!o||studentScreenPeer?.currentRemoteDescription)return;
+
+      studentScreenPeer=new RTCPeerConnection(rtcConfig);
+      studentScreenPeer.ontrack=e=>{
+        const stream=e.streams[0]||new MediaStream([e.track]);
+        const video=$("studentScreenVideo");
+        if(video)video.srcObject=stream;
+        video?.play?.().catch(()=>{});
+      };
+      studentScreenPeer.onicecandidate=e=>{
+        if(e.candidate)addDoc(
+          liveUserSubCol("screenCandidates",auth.currentUser.uid,"student"),
+          e.candidate.toJSON()
+        );
+      };
+
+      await studentScreenPeer.setRemoteDescription(o);
+      const a=await studentScreenPeer.createAnswer();
+      await studentScreenPeer.setLocalDescription(a);
+      await setDoc(liveUserDoc("screenAnswers",auth.currentUser.uid),{
+        answer:{type:a.type,sdp:a.sdp}
+      });
+
+      onSnapshot(liveUserSubCol("screenCandidates",auth.currentUser.uid,"teacher"),snap=>{
+        snap.docChanges().forEach(ch=>{
+          if(ch.type==="added")studentScreenPeer?.addIceCandidate(ch.doc.data()).catch(()=>{});
+        });
+      });
+    });
+
+    $("studentLiveRoom").classList.remove("hidden");
+    $("joinLiveBtn").classList.add("hidden");
+    loadChat();
+  }catch(e){
+    console.error(e);
+    alert("Could not join live class: "+e.message);
+  }
+}
+window.studentJoinLive=studentJoinLive;
+
+async function leaveLiveClass(){
+  if(!currentUser)return;
+  await deleteDoc(liveUserDoc("participants",currentUser.id)).catch(()=>{});
+  await deleteDoc(liveUserDoc("offers",currentUser.id)).catch(()=>{});
+  await deleteDoc(liveUserDoc("answers",currentUser.id)).catch(()=>{});
+  await deleteDoc(liveUserDoc("screenOffers",currentUser.id)).catch(()=>{});
+  await deleteDoc(liveUserDoc("screenAnswers",currentUser.id)).catch(()=>{});
+  studentPeer?.close();studentScreenPeer?.close();
+  studentPeer=null;studentScreenPeer=null;
+  stopLocal(studentStream);studentStream=null;
+  if($("studentTeacherVideo"))$("studentTeacherVideo").srcObject=null;
+  if($("studentScreenVideo"))$("studentScreenVideo").srcObject=null;
+  $("studentLiveRoom")?.classList.add("hidden");
+  $("joinLiveBtn")?.classList.remove("hidden");
+}
+
+async function endLiveClass(){
+  if(!isAdminUser)return;
+  if(!confirm("End the live class for all students?"))return;
+  await setDoc(liveDocRef(),{
+    active:false,endedAt:serverTimestamp()
+  },{merge:true});
+  await deleteAllDocsAtPath(["liveClass","main","offers"]);
+  await deleteAllDocsAtPath(["liveClass","main","answers"]);
+  await deleteAllDocsAtPath(["liveClass","main","participants"]);
+  for(const pc of teacherPeers.values())pc.close();
+  for(const pc of teacherScreenPeers.values())pc.close();
+  teacherPeers.clear();teacherScreenPeers.clear();
+  clearTeacherStudentVideos();
+  stopLocal(teacherStream);stopLocal(teacherScreenStream);
+  teacherStream=null;teacherScreenStream=null;
+  $("adminTeacherVideo").srcObject=null;
+  $("adminScreenVideo").srcObject=null;
+  updateAdminLiveUI();
+}
+window.endLiveClass=endLiveClass;
+
+async function shareTeacherScreen(){
+  if(!teacherStream)return alert("Start the live class first.");
+  try{
+    teacherScreenStream=await navigator.mediaDevices.getDisplayMedia({
+      video:true,
+      audio:true
+    });
+    $("adminScreenVideo").srcObject=teacherScreenStream;
+    for(const studentId of teacherPeers.keys())
+      await createTeacherScreenPeer(studentId);
+
+    const track=teacherScreenStream.getVideoTracks()[0];
+    if(track)track.onended=()=>{
+      stopLocal(teacherScreenStream);
+      teacherScreenStream=null;
+      $("adminScreenVideo").srcObject=null;
+      teacherScreenPeers.forEach(pc=>pc.close());
+      teacherScreenPeers.clear();
+    };
+    $("shareScreenBtn").textContent="🖥️ SCREEN SHARING";
+  }catch(e){
+    console.warn(e);
+  }
+}
+window.shareTeacherScreen=shareTeacherScreen;
+
+function toggleTeacherMic(){
+  if(!teacherStream)return;
+  const t=teacherStream.getAudioTracks()[0];
+  if(!t)return;
+  t.enabled=!t.enabled;
+  $("teacherMicBtn").textContent=t.enabled?"🎙️ MUTE MIC":"🔇 UNMUTE MIC";
+}
+window.toggleTeacherMic=toggleTeacherMic;
+
+function stopLocal(stream){stream?.getTracks().forEach(t=>t.stop())}
+
+function appendChat(m){
+  if(!m)return;
+  const box=$("adminChatMessages"),box2=$("studentChatMessages");
+  const html=`<div class="chat-msg"><strong>${esc(m.name||"User")}</strong><p>${esc(m.text||"")}</p></div>`;
+  if(box)box.insertAdjacentHTML("beforeend",html);
+  if(box2)box2.insertAdjacentHTML("beforeend",html);
+  box?.lastElementChild?.scrollIntoView();
+  box2?.lastElementChild?.scrollIntoView();
+}
+
+async function sendLiveChat(who){
+  const input=who==="admin"?$("adminChatInput"):$("studentChatInput");
+  const text=input?.value.trim();
+  if(!text||!auth.currentUser)return;
+  await addDoc(liveSubCol("chat"),{
+    uid:auth.currentUser.uid,
+    name:isAdminUser?"Teacher":(currentUser?.nickname||currentUser?.name||"Student"),
+    text,at:serverTimestamp()
+  });
+  input.value="";
+}
+window.sendLiveChat=sendLiveChat;
+
+function loadChat(){
+  if(studentChatUnsub)studentChatUnsub();
+  studentChatUnsub=onSnapshot(query(liveSubCol("chat"),orderBy("at","asc")),snap=>{
+    const box=$("studentChatMessages");
+    if(!box)return;
+    box.innerHTML="";
+    snap.forEach(d=>appendChat(d.data()));
+  });
+}
 /* ================= REFLEX ================= */
 let reflexRound=0,reflexTimes=[],reflexStartTime=0,reflexTimer=null;window.startReflexGame=function(){if(!currentUser)return;reflexRound=0;reflexTimes=[];$("reflexStart").disabled=true;$("reflexMessage").style.display="none";nextReflexRound()};function nextReflexRound(){if(reflexRound>=5)return finishReflexGame();reflexRound++;$("reflexRound").textContent=`Round: ${reflexRound}/5`;$("reflexCurrent").textContent="Current: Waiting...";const target=$("reflexTarget"),area=$("reflexArea");target.style.display="none";clearTimeout(reflexTimer);reflexTimer=setTimeout(()=>{const maxX=Math.max(5,area.clientWidth-target.offsetWidth-5),maxY=Math.max(5,area.clientHeight-target.offsetHeight-5);target.style.left=Math.floor(Math.random()*maxX)+"px";target.style.top=Math.floor(Math.random()*maxY)+"px";target.style.display="block";reflexStartTime=performance.now();$("reflexCurrent").textContent="Current: GO!"},500+Math.random()*1300)}window.hitReflexTarget=function(){if($("reflexTarget").style.display==="none")return;const r=Math.round(performance.now()-reflexStartTime);reflexTimes.push(r);$("reflexTarget").style.display="none";$("reflexCurrent").textContent=`Current: ${r} ms`;$("reflexAverage").textContent=`Average: ${Math.round(reflexTimes.reduce((a,b)=>a+b,0)/reflexTimes.length)} ms`;setTimeout(nextReflexRound,500)};async function finishReflexGame(){const avg=Math.round(reflexTimes.reduce((a,b)=>a+b,0)/reflexTimes.length);if(currentUser&&(!currentUser.reflexBest||avg<currentUser.reflexBest)){await updateDoc(doc(db,usersPath,currentUser.id),{reflexBest:avg})}$("reflexMessage").style.display="flex";$("reflexMessage").textContent=`GAME COMPLETE! Average reaction: ${avg} ms`;$("reflexStart").disabled=false;$("reflexAverage").textContent=`Average: ${avg} ms`}
 
 /* ================= AUTH + DATA SYNC ================= */
-async function loadAuthenticatedUser(u){if(!u){currentUser=null;return}isAdminUser=u.email?.toLowerCase()===ADMIN_EMAIL.toLowerCase();if(isAdminUser){currentUser=null;startLiveListeners();listenTeacherOffers();renderAdmin();return}try{const snap=await getDoc(doc(db,usersPath,u.uid));if(!snap.exists()){currentUser=null;throw new Error("Your Firebase login exists, but your student profile is missing. Please contact the administrator.")}const data=snap.data();if(data.role&&data.role!=="student"){currentUser={...data,id:u.uid};return}currentUser={...data,id:u.uid};if(!data.welcomePointsAwarded){await updateDoc(doc(db,usersPath,u.uid),{points:10,firstLoginAt:Date.now(),welcomePointsAwarded:true});currentUser={...currentUser,points:10,firstLoginAt:Date.now(),welcomePointsAwarded:true}}if(!isAdminUser)renderStudentDashboard()}catch(err){console.error(err);showMsg("loginMessage",err.message||"Could not load your student profile.")}}
+
+function getReferralCodeForUid(uid){return "KL-"+String(uid||"").replace(/[^a-zA-Z0-9]/g,"").slice(0,8).toUpperCase()}
+function getReferralCodeFromUrl(){try{return (new URLSearchParams(location.search).get("ref")||"").trim().toUpperCase()}catch(e){return ""}}
+function getReferralLink(){if(!currentUser?.referralCode)return "";return location.origin+location.pathname+"?ref="+encodeURIComponent(currentUser.referralCode)}
+async function ensureReferralCode(){
+  if(!currentUser)return;
+  const count=Number(currentUser.referralCount)||0;
+  if(currentUser.referralCode){if(currentUser.referralCount==null)currentUser.referralCount=count;return}
+  const code=getReferralCodeForUid(currentUser.id);
+  try{await updateDoc(doc(db,usersPath,currentUser.id),{referralCode:code,referralCount:count});currentUser={...currentUser,referralCode:code,referralCount:count};}catch(e){console.error("Referral code setup:",e)}
+}
+async function shareReferralLink(){const link=getReferralLink();if(!link)return alert("Your referral code is still being generated. Please wait a moment and try again.");if(navigator.share){try{await navigator.share({title:"Join Khali League",text:`Register for Khali League using my referral code ${currentUser.referralCode}.`,url:link});return}catch(e){}}await copyReferralLink()}
+function renderReferralCard(){const input=$("studentReferralLink");if(!input||!currentUser)return;const link=getReferralLink();input.value=link;if($("profileReferralLink"))$("profileReferralLink").value=link;if($("profileReferralCode"))$("profileReferralCode").value=currentUser.referralCode||"";const status=$("referralStatus");if(status)status.textContent=`Code: ${currentUser.referralCode||"Generating..."} • ${Number(currentUser.referralCount)||0} successful referral${Number(currentUser.referralCount||0)===1?"":"s"} • +5 points each`}
+async function copyReferralCode(){const code=currentUser?.referralCode||"";if(!code)return alert("Your referral code is not ready yet.");try{await navigator.clipboard.writeText(code)}catch(e){const ta=document.createElement("textarea");ta.value=code;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove()}const s=$("referralStatus");if(s)s.textContent=`Referral code ${code} copied. Share it with another student.`}
+async function copyReferralLink(){const link=getReferralLink();if(!link)return alert("Your referral link is not ready yet.");try{await navigator.clipboard.writeText(link)}catch(e){const input=$("studentReferralLink");input?.select();document.execCommand("copy")}const status=$("referralStatus");if(status)status.textContent="Referral link copied. Share it with another student."}
+window.copyReferralLink=copyReferralLink;window.copyReferralCode=copyReferralCode;
+async function createMicrosoftStudentProfile(firebaseUser){
+  const profileRef=doc(db,usersPath,firebaseUser.uid);
+  const existing=await getDoc(profileRef);
+  if(existing.exists())return existing.data();
+
+  const now=Date.now();
+  const displayName=firebaseUser.displayName||firebaseUser.email?.split("@")[0]||"Student";
+  const profile={
+    name:displayName,
+    schoolId:"",
+    nickname:displayName.replace(/\s+/g,"").slice(0,18)||"Student",
+    school:"",
+    className:"",
+    gender:"",
+    email:(firebaseUser.email||"").toLowerCase(),
+    games:[],
+    points:10,
+    reflexBest:null,
+    created:now,
+    firstLoginAt:now,
+    welcomePointsAwarded:true,
+    role:"student",
+    referralCode:getReferralCodeForUid(firebaseUser.uid),
+    referralCount:0,
+    referralAwarded:false,
+    referralAwardedByUsers:{},
+    profileComplete:false,
+    authProvider:"microsoft.com"
+  };
+  const referralCode=getReferralCodeFromUrl();
+  const usersCol=collection(db,usersPath);
+  let referrerRef=null;
+  if(referralCode){
+    const q=await getDocs(query(usersCol,where("referralCode","==",referralCode)));
+    if(!q.empty && q.docs[0].id!==firebaseUser.uid)referrerRef=q.docs[0].ref;
+  }
+
+  await runTransaction(db,async tx=>{
+    const studentSnap=await tx.get(profileRef);
+    if(studentSnap.exists())return;
+    if(referrerRef){
+      const rSnap=await tx.get(referrerRef);
+      if(rSnap.exists()){
+        const r=rSnap.data();
+        if(!r.referralAwardedByUsers || !r.referralAwardedByUsers[firebaseUser.uid]){
+          tx.update(referrerRef,{
+            points:(+r.points||0)+5,
+            referralCount:(+r.referralCount||0)+1,
+            referralAwardedByUsers:{...(r.referralAwardedByUsers||{}),[firebaseUser.uid]:true}
+          });
+        }
+        profile.referredBy=referrerRef.id;
+        profile.referralAwarded=true;
+      }
+    }
+    tx.set(profileRef,profile);
+  });
+  return profile;
+}
+
+async function signInWithOutlook(){
+  closeModals();
+  const provider=new OAuthProvider("microsoft.com");
+  provider.setCustomParameters({prompt:"select_account"});
+  try{
+    const cred=await signInWithPopup(auth,provider);
+    let snap=await getDoc(doc(db,usersPath,cred.user.uid));
+    if(!snap.exists()){
+      await createMicrosoftStudentProfile(cred.user);
+      snap=await getDoc(doc(db,usersPath,cred.user.uid));
+    }
+    if(!snap.exists())throw new Error("Could not create your student profile.");
+    currentUser={...snap.data(),id:cred.user.uid};
+    isAdminUser=cred.user.email?.toLowerCase()===ADMIN_EMAIL.toLowerCase();
+    if(isAdminUser){currentUser=null;openAdminDashboard();return}
+    startAuthenticatedDataListeners();
+    await ensureReferralCode();
+    openStudentDashboard();
+  }catch(err){
+    console.error("Outlook login:",err);
+    showMsg("loginMessage",friendlyError(err));
+  }
+}
+window.signInWithOutlook=signInWithOutlook;
+
+async function markCurrentUserActive(){
+  const u=auth.currentUser;
+  if(!u||isAdminUser||!currentUser)return;
+  try{await updateDoc(doc(db,usersPath,u.uid),{lastActiveAt:Date.now()})}catch(e){console.warn("Activity update failed",e)}
+}
+function startActivityHeartbeat(){
+  stopActivityHeartbeat();
+  if(!auth.currentUser||isAdminUser||!currentUser)return;
+  markCurrentUserActive();
+  activityHeartbeat=setInterval(()=>{markCurrentUserActive();renderActiveStudents()},30000);
+  document.addEventListener("visibilitychange",handleActivityVisibility,{passive:true});
+}
+function handleActivityVisibility(){if(document.visibilityState==="visible"){markCurrentUserActive();renderActiveStudents()}}
+function stopActivityHeartbeat(){
+  if(activityHeartbeat){clearInterval(activityHeartbeat);activityHeartbeat=null}
+  document.removeEventListener("visibilitychange",handleActivityVisibility);
+}
+async function loadAuthenticatedUser(u){if(!u){currentUser=null;return}isAdminUser=u.email?.toLowerCase()===ADMIN_EMAIL.toLowerCase();if(isAdminUser){currentUser=null;startLiveListeners();listenTeacherOffers();renderAdmin();return}try{const snap=await getDoc(doc(db,usersPath,u.uid));if(!snap.exists()){currentUser=null;throw new Error("Your Firebase login exists, but your student profile is missing. Please contact the administrator.")}const data=snap.data();if(data.role&&data.role!=="student"){currentUser={...data,id:u.uid};return}currentUser={...data,id:u.uid};await ensureReferralCode();if(!data.welcomePointsAwarded){await updateDoc(doc(db,usersPath,u.uid),{points:10,firstLoginAt:Date.now(),welcomePointsAwarded:true});currentUser={...currentUser,points:10,firstLoginAt:Date.now(),welcomePointsAwarded:true}}if(!isAdminUser){renderStudentDashboard()}}catch(err){console.error(err);showMsg("loginMessage",err.message||"Could not load your student profile.")}}
 let dataUnsubs=[];
-function stopDataListeners(){dataUnsubs.forEach(fn=>{try{fn()}catch(e){}});dataUnsubs=[];liveListenersStarted=false;if(teacherOffersUnsub){teacherOffersUnsub();teacherOffersUnsub=null}}
+function stopDataListeners(){stopActivityHeartbeat();dataUnsubs.forEach(fn=>{try{fn()}catch(e){}});dataUnsubs=[];liveListenersStarted=false;if(teacherOffersUnsub){teacherOffersUnsub();teacherOffersUnsub=null}if(teacherParticipantsUnsub){teacherParticipantsUnsub();teacherParticipantsUnsub=null}if(studentChatUnsub){studentChatUnsub();studentChatUnsub=null}}
 function setupData(){
   // Reviews are public on the landing page; the other collections are private.
   dataUnsubs.push(subscribe(reviewsPath,x=>{reviewsCache=x;renderPublicReviews();if(isAdminUser)renderAdminReviews()}));
@@ -404,13 +979,13 @@ function startAuthenticatedDataListeners(){
   stopDataListeners();
   dataUnsubs.push(subscribe(usersPath,x=>{
     usersCache=x;
+    renderActiveStudents();
     if(auth.currentUser&&!isAdminUser&&usersCache[auth.currentUser.uid]){
       currentUser={...usersCache[auth.currentUser.uid],id:auth.currentUser.uid};
       renderStudentDashboard();
     }
     if(isAdminUser)renderAdmin();
   }));
-  dataUnsubs.push(subscribe(suggestionsPath,x=>{suggestionsCache=x;if(isAdminUser)renderAdminSuggestions();if(isAdminUser)renderAdminStats()}));
   dataUnsubs.push(subscribe(fixturesPath,x=>{fixturesCache=x;if(currentUser&&!isAdminUser)renderStudentFixtures();if(isAdminUser)renderAdminFixtures()}));
   dataUnsubs.push(subscribe(announcementsPath,x=>{announcementsCache=x;if(currentUser&&!isAdminUser)renderStudentAnnouncements();if(isAdminUser)renderAdminAnnouncements()}));
   dataUnsubs.push(subscribe(materialsPath,x=>{materialsCache=x;if(currentUser&&!isAdminUser)renderStudentMaterials();if(isAdminUser)renderAdminMaterials()}));
@@ -425,6 +1000,7 @@ onAuthStateChanged(auth,async u=>{
       openAdminDashboard();
     }else if(currentUser){
       startAuthenticatedDataListeners();
+      startActivityHeartbeat();
       openStudentDashboard();
     }
   }else{
@@ -437,6 +1013,7 @@ onAuthStateChanged(auth,async u=>{
 });
 $("adminEmail").value=ADMIN_EMAIL;
 renderGames();
+if($("regReferralCode")){const urlReferral=getReferralCodeFromUrl();if(urlReferral){$("regReferralCode").value=urlReferral;$("regReferralCode").readOnly=true;}}
 renderGameCheckboxes("registrationGames","registration");
 fillClasses("editClass");
 fillClasses("adminEditClass");
@@ -447,10 +1024,6 @@ document.querySelectorAll(".modal").forEach(m=>m.addEventListener("click",e=>{if
 window.openStudentLogin=openStudentLogin;window.openAdminLogin=openAdminLogin;window.closeModals=closeModals;window.scrollToSection=scrollToSection;window.showHome=showHome;window.openStudentDashboard=openStudentDashboard;window.openAdminDashboard=openAdminDashboard;window.openEditProfile=openEditProfile;window.studentLogout=studentLogout;window.adminLogout=adminLogout;window.leaveLiveClass=leaveLiveClass;
 </script>
 </body>
-</html>
-    
-  </body>
-  
 </html>
     
   </body>
